@@ -1,0 +1,25 @@
+"InstallScript"
+{
+	"Run Process"
+	{
+		"easyanticheat"
+		{
+			"HasRunKey"		"HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\EasyAntiCheat_EOS"
+			"process 1"		"%INSTALLDIR%\\EasyAntiCheat\\EasyAntiCheat_EOS_Setup.exe"
+			"command 1"		"install 1d70a34ddbea424ea46fc275223756c0"
+			"NoCleanUp"		"0"
+		}
+	}
+	"Run Process On Uninstall"
+	{
+		"easyanticheat"
+		{
+			"process 1"		"%INSTALLDIR%\\EasyAntiCheat\\EasyAntiCheat_EOS_Setup.exe"
+			"command 1"		"uninstall 1d70a34ddbea424ea46fc275223756c0"
+		}
+	}
+}
+"kvsignatures"
+{
+	"InstallScript"		"0b90b61c9eaed60dedac1de158b59498cc0f102af04b880badea7ea81366bbfd22f866f9861d22d6584e5128956e93180437fb890cf8bcd10de9c58adc8dcb12e4d864e6e9ffde36b5b331f84e7b23e6c2816a69e4c012f7d7ce2f9107b52b0d61e81a8896a6c2e5694badecccfe94fcf70f3b8d2b8b2e6aadb8985232e21c74"
+}
