@@ -1,0 +1,313 @@
+00:19:57 | GUNZ 1,0,0,290 launched. build (Sep 23 2025 22:17:57) 
+00:19:57 | Log time (09/25/25 00:19:57)
+00:20:00 | CPU ID = AuthenticAMD ( family = 33039 , model = 8 , stepping = 1 ) @ 2295 MHz
+00:20:18 | Display Device = NVIDIA GeForce GTX 1650 ( vendor=10de device=1f91 subsys=142a1025 revision=a1 )
+00:20:18 | Display Driver Version = 32.0.0015.8115
+00:20:18 | Windows = 10.0 Build 18363 ,  (4194303KB) : 00:20:18 |  ..
+00:20:23 | Country : (KOR), Language : (KOR)
+00:20:32 | InitializeNotify ok.
+00:20:44 | HardwareTNL : 1
+00:20:44 | WFog Enabled Device.
+00:20:51 | device created.
+00:20:51 | Video memory 2042.000000 
+00:20:51 | shader initialize successful : 1
+00:20:52 | main : RGetLenzFlare()->Initialize() 
+00:20:53 | InitialLoading success.
+00:20:53 | interface Initialize success
+00:20:53 | ZApplication::OnCreate : begin
+00:20:57 | Steam API Init Success.
+00:21:01 | 0(Driver de som primário): Hardware Mixing Not Supported
+00:21:01 | 1(Padrão (Realtek(R) Audio)): Hardware Mixing Not Supported
+00:21:01 | 2(1 - 27G2G4 (AMD High Definition Audio Device)): Hardware Mixing Not Supported
+00:21:01 | 3(Alto-falantes (Steam Streaming Speakers)): Hardware Mixing Not Supported
+00:21:01 | 4(Alto-falantes (Steam Streaming Microphone)): Hardware Mixing Not Supported
+00:21:01 | [[[getMaxChannel32]]]]
+00:21:03 | 
+-------------------> Sound Engine Create : 2.672000 
+
+00:21:03 | sound engine create.
+00:21:03 | start log bipmap
+00:21:20 | end of load bitmaps2
+00:21:20 | loading pictures : 17.461000 
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap Lobby_Number.png not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap Lobby_PlayerStatus.tga not found.
+00:21:21 | warning : bitmap Lobby_PlayerStatus.tga not found.
+00:21:21 | warning : bitmap Lobby_PlayerStatus.tga not found.
+00:21:21 | warning : bitmap Lobby_PlayerStatus.tga not found.
+00:21:21 | warning : bitmap Lobby_PlayerStatus.tga not found.
+00:21:21 | warning : bitmap ScrollbarUpBtn_off.png not found.
+00:21:21 | warning : bitmap ScrollbarUpBtn_on.png not found.
+00:21:21 | warning : bitmap ScrollbarDownBtn_off.png not found.
+00:21:21 | warning : bitmap ScrollbarDownBtn_on.png not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap interface.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap RankIcon.tga not found.
+00:21:21 | warning : bitmap scrollbtn_up_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_dn_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_up_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_dn_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_lt_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_rt_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_lt_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_rt_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_up_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_dn_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_up_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_dn_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_thumb.png not found.
+00:21:21 | warning : bitmap scrollbtn_lt_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_rt_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_lt_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_rt_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_up_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_dn_off.png not found.
+00:21:21 | warning : bitmap scrollbtn_up_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_dn_on.png not found.
+00:21:21 | warning : bitmap scrollbtn_thumb.png not found.
+00:21:21 | warning : bitmap scrollbtn_thumb.png not found.
+00:21:21 | warning : bitmap stage_labelbg.tga not found.
+00:21:21 | warning : bitmap stage_labelbg.tga not found.
+00:21:21 | warning : bitmap stage_labelbg.tga not found.
+00:21:21 | warning : bitmap stage_labelbg.tga not found.
+00:21:21 | warning : bitmap stage_labelbg.tga not found.
+00:21:21 | warning : bitmap stage_labelbg.tga not found.
+00:21:21 | warning : bitmap slot_head.tga not found.
+00:21:21 | warning : bitmap slot_head.tga not found.
+00:21:21 | warning : bitmap StageLine_widthLine.png not found.
+00:21:21 | warning : bitmap ScoreBoard.png not found.
+00:21:21 | warning : bitmap team_score.tga not found.
+00:21:21 | warning : bitmap Challenge_TimeNum.tga not found.
+00:21:21 | warning : bitmap Challenge_RoundNum.tga not found.
+00:21:21 | warning : bitmap Challenge_Round.tga not found.
+00:21:21 | warning : bitmap ShopBtn_Exit_down.png not found.
+00:21:21 | warning : bitmap ShopBtn_Exit_down.png not found.
+00:21:21 | warning : bitmap ShopBtn_Exit_down.png not found.
+00:21:21 | warning : bitmap InGame_ef_Fantastic.png not found.
+00:21:21 | warning : bitmap InGame_ef_Dominating.png not found.
+00:21:21 | warning : bitmap InGame_ef_Unstoppable.png not found.
+00:21:21 | warning : bitmap InGame_ef_Rampage.png not found.
+00:21:21 | warning : bitmap InGame_ef_Excellent.png not found.
+00:21:21 | warning : bitmap InGame_ef_Unbelievable.png not found.
+00:21:21 | warning : bitmap InGame_ef_Headshot.png not found.
+00:21:21 | warning : bitmap InGame_combo_good.png not found.
+00:21:21 | warning : bitmap InGame_Duel_0.png not found.
+00:21:21 | warning : bitmap InGame_Duel_0.png not found.
+00:21:21 | warning : bitmap DuelTournament_score_timeback.tga not found.
+00:21:21 | warning : bitmap infinity.tga not found.
+00:21:21 | warning : bitmap DuelTournament_CharInfoBack.tga not found.
+00:21:21 | warning : bitmap vs.tga not found.
+00:21:21 | warning : FrameLook Custom2FrameLook not found.
+00:21:21 | warning : bitmap ShopTab_FramePanel_1.tga not found.
+00:21:21 | warning : bitmap shop_buy_off.tga not found.
+00:21:21 | warning : bitmap shop_buy_on.tga not found.
+00:21:21 | warning : bitmap shop_buy_on.tga not found.
+00:21:21 | warning : bitmap shop_sell_off.tga not found.
+00:21:21 | warning : bitmap shop_sell_on.tga not found.
+00:21:21 | warning : bitmap shop_sell_on.tga not found.
+00:21:21 | warning : bitmap shop_buy_on.tga not found.
+00:21:21 | warning : bitmap shop_sell_on.tga not found.
+00:21:21 | warning : bitmap ShopBtn_armor_off.tga not found.
+00:21:21 | warning : bitmap ShopBtn_armor_over.tga not found.
+00:21:21 | warning : bitmap ShopBtn_armor_on.tga not found.
+00:21:21 | warning : bitmap ShopBtn_weapon_off.tga not found.
+00:21:21 | warning : bitmap ShopBtn_weapon_over.tga not found.
+00:21:21 | warning : bitmap ShopBtn_weapon_on.tga not found.
+00:21:21 | warning : bitmap listframeclose.tga not found.
+00:21:21 | warning : bitmap listframeopen.tga not found.
+00:21:21 | warning : bitmap listframeclose.tga not found.
+00:21:21 | warning : bitmap listframeopen.tga not found.
+00:21:21 | warning : bitmap ShopBtn_listframeopen_off.tga not found.
+00:21:21 | warning : bitmap ShopBtn_listframeopen_off.tga not found.
+00:21:21 | warning : bitmap ShopBtn_listframeopen_off.tga not found.
+00:21:21 | warning : bitmap ShopBtn_listframeclose_off.tga not found.
+00:21:21 | warning : bitmap ShopBtn_listframeclose_on.tga not found.
+00:21:21 | warning : bitmap ShopBtn_listframeclose_on.tga not found.
+00:21:21 | warning : bitmap shop_off_kr.tga not found.
+00:21:21 | warning : bitmap shop_on_kr.tga not found.
+00:21:21 | warning : bitmap shop_on_kr.tga not found.
+00:21:21 | warning : bitmap equip_off_kr.tga not found.
+00:21:21 | warning : bitmap equip_on_kr.tga not found.
+00:21:21 | warning : bitmap equip_on_kr.tga not found.
+00:21:21 | warning : bitmap exit_off_kr.tga not found.
+00:21:21 | warning : bitmap exit_on_kr.tga not found.
+00:21:21 | warning : bitmap exit_on_kr.tga not found.
+00:21:21 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap result_finish.tga not found.
+00:21:22 | warning : bitmap result_win.tga not found.
+00:21:22 | warning : bitmap result_win.tga not found.
+00:21:22 | warning : bitmap result_lose.tga not found.
+00:21:22 | warning : bitmap result_finish.tga not found.
+00:21:22 | warning : bitmap result_finish.tga not found.
+00:21:22 | warning : FrameLook Custom2FrameLook not found.
+00:21:22 | warning : bitmap shop_off_kr.tga not found.
+00:21:22 | warning : bitmap shop_on_kr.tga not found.
+00:21:22 | warning : bitmap shop_on_kr.tga not found.
+00:21:22 | warning : bitmap equip_off_kr.tga not found.
+00:21:22 | warning : bitmap equip_on_kr.tga not found.
+00:21:22 | warning : bitmap equip_on_kr.tga not found.
+00:21:22 | warning : bitmap option_off_kr.tga not found.
+00:21:22 | warning : bitmap option_on_kr.tga not found.
+00:21:22 | warning : bitmap option_on_kr.tga not found.
+00:21:22 | warning : bitmap exit_off_kr.tga not found.
+00:21:22 | warning : bitmap exit_on_kr.tga not found.
+00:21:22 | warning : bitmap exit_on_kr.tga not found.
+00:21:22 | warning : bitmap OverlayAnnounceBg.tga not found.
+00:21:22 | warning : bitmap OverlayAnnounceBg.tga not found.
+00:21:22 | warning : bitmap OverlayAnnounceBg.tga not found.
+00:21:22 | warning : bitmap Mail_income.png not found.
+00:21:22 | warning : bitmap mail_icon.png not found.
+00:21:22 | warning : bitmap icon_gameroom.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | warning : bitmap icon_gameroom_s.tga not found.
+00:21:22 | IDLResource Loading Success!!
+00:21:22 | IDL resources : 1.390000 
+00:21:22 | start InitInterface option
+00:21:22 | Number of Display mode : 93
+00:21:22 | end of InitInterface option ok
+00:21:22 | Init maps : no Current ChannelRule 
+00:21:22 | Screen Effect Manager Create : 0.254000 
+00:21:22 | Screen effect manager create success.
+00:21:23 | Effect manager create success.
+00:21:24 | Client create success.
+00:21:32 | game interface create success.
+00:21:32 | 
+-------------------> GameInterface Create : 28.844999 
+
+00:21:33 | -Bone limit over[22] (eq_chest_05)
+00:21:33 | MESH(model/lo/man_lo02.elu), NODE(eq_chest_05) : MakeVSVB failed in makeallnodevb
+00:21:33 | Load character.xml success,
+00:21:33 | 
+-------------------> Character Loading : 0.962000 
+
+00:21:34 | 
+-------------------> WeaponMesh Loading : 0.788000 
+
+00:21:34 | Load weapon.xml success. 
+00:21:34 | 
+-------------------> Worlditem Loading : 0.061000 
+
+00:21:38 | Load zitem info success.
+00:21:38 | Load zBuff info success.
+00:21:38 | Init world item manager success.
+00:21:38 | Init map Descriptor success.
+00:21:38 | Read spy map Descriptor success.
+00:21:38 | Read spy mode Descriptor success.
+00:21:38 | Init channel rule manager success.
+00:21:38 | Init chat filter manager success.
+00:21:38 | Init abuse manager success.
+00:21:38 | Init chatting filter. success
+00:21:38 | 
+-------------------> ETC .. : 4.253000 
+
+00:21:38 | main : OnCreate() done
+00:21:38 | HideAllWidgets
+00:21:40 | EOS Login Success - UserID: 00020fdfd83f41789d61830417565868
+00:21:40 | Anticheat_BeginSession Success
