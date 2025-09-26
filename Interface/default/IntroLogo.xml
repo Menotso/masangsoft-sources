@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="NewMathcServerList">
+	<Schema xmlns="MasangData" xmlns:dt="MasangDataTypes" />
+
+<!--이미지는 BitmapAlias.xml에서 검색-->
+
+<!-- 프레임 생성 : NewMatchServerList -->
+	<FRAME item="IntroLogo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>		
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- Picture : 배경 이미지 -->
+	<PICTURE item="BG" parent="IntroLogo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+	<ZINTROLOGO item="IntroPicture" parent="IntroLogo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		
+		<BITMAP type="Intro01">Interface/default/Loading/Intro01.png</BITMAP>
+		<BITMAP type="Intro02">Interface/default/Loading/Intro02.png</BITMAP>
+	</ZINTROLOGO>
+</XML>
