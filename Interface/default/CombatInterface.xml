@@ -1,0 +1,5093 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="CombatInterface">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+<!-- äǃâ -->
+<!-- Score Board -->
+	<FRAMELOOKTEMPLATE item="ScoreBoardFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>241</G>
+			<B>241</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>10</X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+
+	<SCOREBOARD item="CombatScoreBoardFrame">
+		<FRAMELOOK>ScoreBoardFrameLook</FRAMELOOK>
+		<VISIBLE>false</VISIBLE>
+		<BOUNDS>
+			<X>50</X>
+			<Y>50</Y>
+			<W>520</W>
+			<H>400</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+	</SCOREBOARD>
+	<LABEL item="CombatScoreGameType" parent="CombatScoreBoardFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Death Match</TEXT>
+	</LABEL>
+	<LABEL item="CombatScoreRound" parent="CombatScoreBoardFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>240</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Round 10/10</TEXT>
+	</LABEL>
+	<SCORELISTBOX item="CombatScoreListBox" parent="CombatScoreBoardFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>520</W>
+			<H>370</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+	</SCORELISTBOX>
+
+<!--
+	<LABEL item="CombatItemName" parent="CombatInfo2">
+		<BOUNDS>
+			<X>65</X>
+			<Y>100</Y>
+			<W>50</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT>Pistol</TEXT>
+	</LABEL>
+-->
+<!-- ܾƍ ܼٞ¶ -->
+	<LABEL item="CenterMessage">
+		<LABELLOOK>CenterMessageLabelLook</LABELLOOK>
+		<VISIBLE>false</VISIBLE>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>600</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>No Message</TEXT>
+	</LABEL>
+
+	<LABEL item="Time" >
+		<LABELLOOK>CenterMessageLabelLook</LABELLOOK>
+		<VISIBLE>false</VISIBLE>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>600</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>No Message</TEXT>
+	</LABEL>
+
+	
+	
+	<!--인게임 점수판 시작-->	
+	<FRAME item="NewScoreBoard">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>true</MOVABLE>
+		<FOCUSABLE>false</FOCUSABLE>		
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<PICTURE item="ScoreBoardBg" parent="NewScoreBoard">
+		<BOUNDS>
+			<X>100</X>
+			<Y>70</Y>
+			<W>855</W> 
+			<H>675</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>ScoreBoard.png</BITMAP>
+	</PICTURE> 
+	
+
+	<!--인게임 점수판 상단 방 정보 시작-->
+	<LABEL item="RoomTitle" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>65</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="MapName" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>65</X>
+			<Y>65</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="GameType" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>65</X>
+			<Y>85</Y>	
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LABEL>	
+
+	
+	
+	<LABEL item="ScoreBoardInfoString_1" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>488</X>
+			<Y>43</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	
+	<LABEL item="ScoreBoardInfoString_2" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>488</X>
+			<Y>63</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<LABEL item="ScoreBoardInfoString_3" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>488</X>
+			<Y>83</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LABEL>		
+	
+	
+	
+	
+	
+	
+	<!---인게임 점수판 상단 방 정보 끝-->
+	
+	
+	<!---인게임 점수판 그리드 레이블 시작-->
+	
+		
+	<LABEL item="Label_1" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>12</X>
+			<Y>132</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>레벨</TEXT>
+	</LABEL>	
+	<LABEL item="Label_2" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>105</X>
+			<Y>132</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>이름</TEXT>
+	</LABEL>
+	<LABEL item="Label_3" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>315</X>
+			<Y>132</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>	
+		<VISIBLE>true</VISIBLE>
+		<TEXT>클랜</TEXT>
+	</LABEL>	
+	<LABEL item="Label_4" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>510</X>
+			<Y>132</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>Exp</TEXT>
+	</LABEL>	
+	<LABEL item="Label_5" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>633</X>
+			<Y>132</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>Kill</TEXT>
+	</LABEL>	
+	<LABEL item="Label_6" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>703</X>
+			<Y>132</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>Death</TEXT>
+	</LABEL>	
+	<LABEL item="Label_7" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>780</X>
+			<Y>132</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>Ping</TEXT>
+	</LABEL>		
+	
+	
+
+	<LABEL item="Label_1_Clan" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>12</X>
+			<Y>132</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>클랜</TEXT>
+	</LABEL>	
+	<LABEL item="Label_2_Clan" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>228</X>
+			<Y>132</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>레벨</TEXT>
+	</LABEL>
+	<LABEL item="Label_3_Clan" parent="ScoreBoardBg">		
+		<BOUNDS>
+			<X>320</X>
+			<Y>132</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>	
+		<VISIBLE>false</VISIBLE>
+		<TEXT>이름</TEXT>
+	</LABEL>	
+
+	
+	
+	
+	
+	
+	<!---인게임 점수판 그리드 레이블 끝-->
+	<!---인게임 점수판 리스트 박스 시작-->
+	<INGAMESCOREBOARDLISTBOX item="ScoreboardListBox" parent="ScoreBoardBg">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>3</X>
+			<Y>117</Y>
+			<W>588</W>
+			<H>365</H>
+		</BOUNDS>
+		<ITEMHEIGHT>20</ITEMHEIGHT>
+		<VISIBLE>true</VISIBLE>
+	</INGAMESCOREBOARDLISTBOX>
+	<!---인게임 점수판 리스트 박스 끝-->	
+	<!--인게임 점수판 끝-->	
+
+
+	<FRAME item="CombatMenuFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H><!--319-->
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>true</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+		<FOCUSABLE>true</FOCUSABLE>
+	</FRAME>
+	
+	<BUTTON item="CombatMenuClose" parent="CombatMenuFrame">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>77</Y>
+			<W>1920</W>
+			<H>1003</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	<PICTURE item="ComebatMenuToolBar" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>77</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_EscTobbar.png</BITMAP>
+	</PICTURE>
+
+	<ICONBUTTON item="InGameOptionButton" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1866</X>
+			<Y>17</Y>
+			<W>34</W>
+			<H>34</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">HideOut_OptionButton.png</BITMAP>
+		<BITMAP type="icon" state="over">HideOut_OptionButtonOver.png</BITMAP>
+		<ICONRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>34</W>
+			<H>34</H>
+		</ICONRECT>
+	</ICONBUTTON>
+	
+	<BMBUTTON item="InGamePlayerReactBtn" parent="CombatMenuFrame">
+		<PUSHBUTTON> </PUSHBUTTON>
+		<BOUNDS>
+			<X>745</X>
+			<Y>23</Y>
+			<W>175</W>
+			<H>32</H>
+		</BOUNDS>
+		<FONT>FONTa18b</FONT>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI1</TEXT> <!--게?Ŀݫ? ?̿ŪЀ긿&amp;X) -->
+	</BMBUTTON>
+	
+	<BMBUTTON item="InGameExitBtn" parent="CombatMenuFrame">
+		<PUSHBUTTON> </PUSHBUTTON>
+		<BOUNDS>
+			<X>1045</X>
+			<Y>23</Y>
+			<W>150</W>
+			<H>32</H>
+		</BOUNDS>
+		<FONT>FONTa18b</FONT>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI2</TEXT> <!--게?Ŀݫ? ?̿ŪЀ긿&amp;X) -->
+	</BMBUTTON>
+	
+	<BMBUTTON item="FaultyUserReportBtn" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>708</X>
+			<Y>70</Y>
+			<W>225</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa12b</FONT>
+		<BITMAP type="up">IngameESC_UIBar_OFF.png</BITMAP>
+		<BITMAP type="down">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="over">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="disable">IngameESC_UIBar_OFF.png</BITMAP>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="disable">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI3</TEXT>
+	</BMBUTTON>
+	
+	<PICTURE item="IndicateLine_1" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>705</X>
+			<Y>70</Y>
+			<W>4</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>IndicatorLine.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="DividingLine_1" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>708</X>
+			<Y>118</Y>
+			<W>223</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>Dividing_Line.png</BITMAP>
+	</PICTURE>
+	
+	<BMBUTTON item="BlackUserRegistBtn" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>708</X>
+			<Y>120</Y>
+			<W>225</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa12b</FONT>
+		<BITMAP type="up">IngameESC_UIBar_OFF.png</BITMAP>
+		<BITMAP type="down">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="over">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="disable">IngameESC_UIBar_OFF.png</BITMAP>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="disable">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI4</TEXT>
+	</BMBUTTON>
+	
+	<PICTURE item="IndicateLine_2" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>705</X>
+			<Y>120</Y>
+			<W>4</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>IndicatorLine.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="DividingLine_2" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>708</X>
+			<Y>168</Y>
+			<W>223</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>Dividing_Line.png</BITMAP>
+	</PICTURE>
+	<BMBUTTON item="EjectionBtn" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>708</X>
+			<Y>170</Y>
+			<W>225</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa12b</FONT>
+		<BITMAP type="up">IngameESC_UIBar_OFF.png</BITMAP>
+		<BITMAP type="down">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="over">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="disable">IngameESC_UIBar_OFF.png</BITMAP>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="disable">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI5</TEXT>
+	</BMBUTTON>
+	
+	<PICTURE item="IndicateLine_3" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>705</X>
+			<Y>170</Y>
+			<W>4</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>IndicatorLine.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="DividingLine_3" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>708</X>
+			<Y>218</Y>
+			<W>223</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>Dividing_Line.png</BITMAP>
+	</PICTURE>
+	
+	<BMBUTTON item="RestRoomReturnBtn" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1008</X>
+			<Y>70</Y>
+			<W>225</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa12b</FONT>
+		<BITMAP type="up">IngameESC_UIBar_OFF.png</BITMAP>
+		<BITMAP type="down">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="over">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="disable">IngameESC_UIBar_OFF.png</BITMAP>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="disable">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI6</TEXT>
+	</BMBUTTON>
+	
+	<PICTURE item="IndicateLine_4" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1005</X>
+			<Y>70</Y>
+			<W>4</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>IndicatorLine.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="DividingLine_4" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1008</X>
+			<Y>118</Y>
+			<W>225</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>Dividing_Line.png</BITMAP>
+	</PICTURE>
+	
+	<BMBUTTON item="LobbyReturnBtn" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1008</X>
+			<Y>120</Y>
+			<W>225</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa12b</FONT>
+		<BITMAP type="up">IngameESC_UIBar_OFF.png</BITMAP>
+		<BITMAP type="down">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="over">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="disable">IngameESC_UIBar_OFF.png</BITMAP>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="disable">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI7</TEXT>
+	</BMBUTTON>
+	<PICTURE item="IndicateLine_5" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1005</X>
+			<Y>120</Y>
+			<W>4</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>IndicatorLine.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="DividingLine_5" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1008</X>
+			<Y>168</Y>
+			<W>225</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>Dividing_Line.png</BITMAP>
+	</PICTURE>
+	
+	<BMBUTTON item="ProgramExitBtn" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1008</X>
+			<Y>170</Y>
+			<W>225</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<FONT>FONTa12b</FONT>
+		<BITMAP type="up">IngameESC_UIBar_OFF.png</BITMAP>
+		<BITMAP type="down">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="over">IngameESC_UIBar_ON.png</BITMAP>
+		<BITMAP type="disable">IngameESC_UIBar_OFF.png</BITMAP>
+		<TYPETEXTCOLOR type ="up">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="over">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type ="disable">
+			<R>123</R>
+			<G>123</G>
+			<B>123</B>
+		</TYPETEXTCOLOR>
+		<TEXT>STR:UI_ESC_UI8</TEXT>
+	</BMBUTTON>
+	
+	<PICTURE item="IndicateLine_6" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1005</X>
+			<Y>170</Y>
+			<W>4</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>IndicatorLine.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="DividingLine_6" parent="CombatMenuFrame">
+		<BOUNDS>
+			<X>1008</X>
+			<Y>218</Y>
+			<W>225</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH>true</STRETCH>
+		<BITMAP>Dividing_Line.png</BITMAP>
+	</PICTURE>
+	
+	
+	<BUTTON item="MediaFrame" parent="CombatMenuFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>266</Y>
+			<W>222</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_12</TEXT> 
+		<VISIBLE>false</VISIBLE>
+	</BUTTON>
+	
+	<!-- 미디어 프레임. -->
+	<FRAME item="CombatMediaMenu">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>260</W>
+			<H>319</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>true</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<TEXT>STR:UI_CI_13</TEXT> 
+	</FRAME>
+	
+	
+	<BUTTON item="OkMediaFrame" parent="CombatMediaMenu">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>95</X>
+			<Y>266</Y>
+			<W>70</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_14</TEXT> 
+	</BUTTON>
+	
+	<BUTTON item="OutMediaFrame" parent="CombatMediaMenu">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>170</X>
+			<Y>266</Y>
+			<W>70</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_15</TEXT> 
+	</BUTTON>
+	
+	<LABEL item="Label" parent="CombatMediaMenu">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>50</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_16</TEXT> <!-- 텍스쳐 품질 -->
+	</LABEL>
+	
+	<COMBOBOX item="MediaSetting" parent="CombatMediaMenu">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>50</Y>
+			<W>120</W>
+			<H>24</H>
+		</BOUNDS>
+
+		<LISTITEM selected="true">STR:UI_CI_18</LISTITEM> <!-- 안 보기 -->
+		<LISTITEM>STR:UI_CI_19</LISTITEM> <!-- 벽 타기1 -->
+		<LISTITEM>STR:UI_CI_20</LISTITEM> <!-- 벽 타기2 -->
+		<LISTITEM>STR:UI_CI_21</LISTITEM> <!-- 벽 타기(응용) -->
+		<LISTITEM>STR:UI_CI_22</LISTITEM> <!-- 칼 샷 -->
+		<LISTITEM>STR:UI_CI_23</LISTITEM> <!-- 반 스텝 -->
+		<LISTITEM>STR:UI_CI_24</LISTITEM> <!-- 단 스텝 -->
+		<LISTITEM>STR:UI_CI_25</LISTITEM> <!-- 나비 스텝 -->
+		<LISTITEM>STR:UI_CI_26</LISTITEM> <!-- 리로드 샷 -->
+		<DROPSIZE>240</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+	
+	<LABEL item="Label" parent="CombatMediaMenu">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>90</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_17</TEXT> <!-- 텍스쳐 품질 -->
+	</LABEL>
+	
+	
+		
+	<BUTTON item="ActionKeyCheckBox" parent="CombatMediaMenu">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>215</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+
+		<CUSTOM/>
+	</BUTTON>
+	
+	
+	<FRAME item="MediaPlayFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>319</W>
+			<H>260</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>top</HALIGN>
+			<VALIGN>left</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>true</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<TEXT>STR:UI_CI_27</TEXT> <!-- єS ٞԺ -->
+	</FRAME>
+	
+	
+
+	
+
+	<!-- Şڸ ֮G ܼٞ¶ -->
+
+	<LABEL item="CombatEffectMsgLabel">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>30</X>
+			<Y>75</Y>
+			<W>260</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<!-- ZBMNUMLABEL : Ŭף|O֧Ղ Ŭףdڸ ǥރ -->
+	<FRAME item="CombatTDMInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<PICTURE item ="TDM_ScoreboardBG" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>276</X>
+			<Y>0</Y>
+			<W>248</W>
+			<H>49</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_scorebg.tga</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="TDM_RedWin" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>291</X>
+			<Y>11</Y>
+			<W>72</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_score_red.tga</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="TDM_BlueWin" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>437</X>
+			<Y>11</Y>
+			<W>72</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_score_blue.tga</BITMAP>
+	</PICTURE>
+
+	<ZBMNUMLABEL item="TDM_Score_Red" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>291</X>
+			<Y>5</Y>
+			<W>72</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<ZBMNUMLABEL item="TDM_Score_Blue" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>437</X>
+			<Y>5</Y>
+			<W>72</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<ZBMNUMLABEL item="TDM_Score_Max" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>360</X>
+			<Y>12</Y>
+			<W>80</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<PICTURE item ="TDM_Scoreboard" parent="CombatTDMInfo">
+		<BOUNDS>
+			<X>276</X>
+			<Y>0</Y>
+			<W>248</W>
+			<H>49</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>team_score.tga</BITMAP>
+	</PICTURE>
+
+<!-- Nice ߖՏٞL݇ -->
+<!--
+	<ANIMATIONTEMPLATE item="CombatNiceAnimTemplate">
+		<DELAY>100</DELAY>
+		<BITMAP>nice01.png</BITMAP>
+		<BITMAP>nice02.png</BITMAP>
+	</ANIMATIONTEMPLATE>
+	<ANIMATION item="CombatNice">
+		<PLAYMODE>repetition</PLAYMODE>
+		<ANIMTEMPLATE>CombatNiceAnimTemplate</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>30</X>
+			<Y>75</Y>
+			<W>128</W>
+			<H>64</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</ANIMATION>
+-->
+<!-- ࠉnڶ dڸ -->
+<!--
+	<LABEL item="ObserverInfoLabel">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>0</X>
+			<Y>50</Y>
+			<W>600</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+-->
+
+	<!-- çذ¶ ŹݺƮ dڸ -->
+	<FRAME item="CombatChallQuestInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+<!-->
+	<ZBMNUMLABEL item="CQ_ElapsedTime" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>300</X>
+			<Y>10</Y>
+			<W>200</W>
+			<H>36</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+<!-->
+	
+	<!-- Label : ׳࠮֥ ¸Ƞյ -->
+<!-->
+	<LABEL item="CQ_RoundProgress" parent="CombatChallQuestInfo">
+		<FONT>FONTa12b</FONT>
+		<BOUNDS>
+			<X>300</X>
+			<Y>46</Y>
+			<W>200</W>
+			<H>36</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	
+	</LABEL>
+<!-->
+	
+	<ZBMNUMLABEL item="CQ_ElapsedTime" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>340</X>
+			<Y>60</Y>
+			<W>116</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>Challenge_TimeNum.tga</BITMAP>
+		<FONTSIZE>
+			<W>64</W>
+			<H>64</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<ZBMNUMLABEL item="CQ_RoundProgress" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>440</X>
+			<Y>20</Y>
+			<W>64</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>Challenge_RoundNum.tga</BITMAP>
+		<FONTSIZE>
+			<W>21</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<PICTURE item ="CQ_Round" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>298</X>
+			<Y>20</Y>
+			<W>127</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Challenge_Round.tga</BITMAP>
+	</PICTURE>	
+	
+	<PICTURE item ="CQ_FadeBG" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>fade.tga</BITMAP>
+	</PICTURE>	
+	
+	<LABEL item="CQ_ObserverDescription" parent="CombatChallQuestInfo">
+		<FONT>FONTa12b</FONT>
+		<BOUNDS>
+			<X>300</X>
+			<Y>540</Y>
+			<W>300</W>
+			<H>36</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMBAT_CQI_01</TEXT>
+	</LABEL>
+	
+	<FRAME item="CombatChatFrame">
+		<FRAMELOOK>ChatFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>350</Y>
+			<W>500</W>
+			<H>240</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>TRUE</LEFT>
+			<TOP>FALSE</TOP>
+			<RIGHT>FALSE</RIGHT>
+			<BOTTOM>TRUE</BOTTOM>
+		</ANCHORS>
+	</FRAME>
+	<!--
+	<LISTBOX item="CombatChatOutput" parent="CombatChatFrame">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>7</X>
+			<Y>22</Y>
+			<W>440</W>
+			<H>118</H>
+		</BOUNDS>
+		<SELECTED>false</SELECTED>
+		<FOCUSABLE>false</FOCUSABLE>
+		<ITEMTEXTMULTILINE/>
+		<NULLFRAME/>
+	</LISTBOX>
+	-->
+	<TEXTAREA item = "CombatAcionKeyHistoryOutput">
+		<FONT>FONTa9</FONT>
+		<BOUNDS>
+			<X>650</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>500</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>0</INDENTATION>
+		<SCROLLBAR>true</SCROLLBAR>
+		<VISIBLE>false</VISIBLE>
+	</TEXTAREA>
+	
+	<TEXTAREA item = "CombatChatOutput" parent = "CombatChatFrame">
+		<FONT>FONTa9</FONT>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>7</X>
+			<Y>112</Y>
+			<W>480</W>
+			<H>118</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>0</INDENTATION>
+		<SCROLLBAR>false</SCROLLBAR>
+	</TEXTAREA>
+
+	<TEXTAREA item = "CombatChatOutputAdmin" parent = "CombatChatFrame">
+		<FONT>FONTa10b</FONT>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>7</X>
+			<Y>0</Y>
+			<W>480</W>
+			<H>118</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>50</INDENTATION>
+		<SCROLLBAR>false</SCROLLBAR>
+	</TEXTAREA>
+	
+	<LABEL item="CombatChatModeToAll" parent="CombatChatFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>208</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_01</TEXT> <!-- ٰ?ߡ?: -->
+	</LABEL>
+	<LABEL item="CombatChatModeToTeam" parent="CombatChatFrame">
+		<LABELLOOK>HPAPLabelLook</LABELLOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>208</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CI_02</TEXT> <!-- ??ٟԺ -->
+	</LABEL>
+	<EDIT item="CombatChatInput" parent="CombatChatFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>67</X>
+			<Y>215</Y>
+			<W>336</W>
+			<H>18</H>
+		</BOUNDS>
+	</EDIT>
+	
+	
+	<BUTTON item="ReplayView">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>610</X>
+			<Y>550</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>리플레이</TEXT> 
+	</BUTTON>
+	
+	
+	<!-- BMBUTTON : 나가기 버튼 -->
+	<BMBUTTON item ="ReplayExit">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>730</X>
+			<Y>548</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_Exit_down.png</BITMAP>
+		<BITMAP type="over">ShopBtn_Exit_down.png</BITMAP>
+		<BITMAP type="down">ShopBtn_Exit_down.png</BITMAP>		
+		<TOOLTIP>STR:UI_TOOLTIP_EXIT</TOOLTIP>
+	</BMBUTTON>
+	
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->	
+<!-- Renewal-->
+
+<!-- # Main frame ////////////////////////////////////////////-->
+	<!-- FRAME : CombatInterface의 캔버스 프레임 -->
+	<FRAME item="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+<!-- # Profile ////////////////////////////////////////////-->
+	<!-- FRAME : HP AP 등 프로필 UI 프레임 -->
+	<FRAME item="HPAPFrame" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>39</X>
+			<Y>41</Y>
+			<W>453</W> 
+			<H>124</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 레벨 표시 뒷배경 -->
+	<PICTURE item="LevelBG" parent="HPAPFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>12</Y>
+			<W>68</W> 
+			<H>68</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>MainTop_LevelBG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- Label : 레벨(LV) 텍스트 표시 -->
+	<LABEL item="InGame_ProfileLevel"  parent="LevelBG">
+		<BOUNDS>
+			<X>0</X>
+			<Y>6</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<FONT>FONTa12b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<TEXT>Lv</TEXT>
+	</LABEL>
+	
+	<!-- Label : 레벨 숫자 텍스트 표시 -->
+	<LABEL item="InGame_ProfileLevelNum"  parent="LevelBG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>20</Y>
+			<W>30</W>
+			<H>30</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTb18b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>99</TEXT>
+	</LABEL>
+	
+	<!-- CIRCLEPROGRESSBAR : 경험치 표시 원형 프로그래스바-->
+	<CIRCLEPROGRESSBAR item="CombatEXPCircleProgressBar"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>10</Y>
+			<W>68</W> 
+			<H>68</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<FILLCOLOR>
+			<INDEX>0</INDEX>
+			<R>30</R>
+			<G>247</G>
+			<B>255</B>
+		</FILLCOLOR>
+		<FILLCOLOR>
+			<INDEX>1</INDEX>
+			<R>30</R>
+			<G>247</G>
+			<B>255</B>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>16</R>
+			<G>16</G>
+			<B>16</B>
+			<ALPHA>255</ALPHA>
+		</EMPTYCOLOR>
+		<THICKNESS>3</THICKNESS>
+		<ANGLE>
+			<BEGIN>270</BEGIN>
+			<END>630</END>
+		</ANGLE>
+	</CIRCLEPROGRESSBAR>
+	
+	<!-- PICTURE : AP 프로그래스바 뒷배경 -->
+	<PICTURE item="CombatAPBG" parent="HPAPFrame">
+		<BOUNDS>
+			<X>76</X>
+			<Y>10</Y>
+			<W>4</W> 
+			<H>72</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_StatusBoundary.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : HP 프로그래스바 뒷배경 -->
+	<PICTURE item="CombatHPBG" parent="HPAPFrame">
+		<BOUNDS>
+			<X>87</X>
+			<Y>10</Y>
+			<W>366</W> 
+			<H>26</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_HPBar.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : 체력 표시 그라디언트 선형 프로그래스바-->
+	<!-- begin 색상은 0, end 색상이 max-->
+	<GRADIENTLINEARPROGRESSBAR item="CombatHPProgressBar"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>13</Y>
+			<W>360</W> 
+			<H>20</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>212</R>
+				<G>212</G>
+				<B>212</B>
+			</BEGIN>
+			<END>
+				<R>230</R>
+				<G>230</G>
+				<B>230</B>
+			</END>
+		</FILLCOLOR>
+		<FILLCOLOR> <!-- 1 -->
+			<INDEX>1</INDEX>
+			<BEGIN>
+				<R>232</R>
+				<G>128</G>
+				<B>58</B>
+			</BEGIN>
+			<END>
+				<R>255</R>
+				<G>179</G>
+				<B>60</B>
+			</END>
+		</FILLCOLOR>
+		<FILLCOLOR> <!-- 2 -->
+			<INDEX>2</INDEX>
+			<BEGIN>
+				<R>207</R>
+				<G>60</G>
+				<B>56</B>
+			</BEGIN>
+			<END>
+				<R>216</R>
+				<G>81</G>
+				<B>29</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</EMPTYCOLOR>
+		<OUTLINECOLOR>
+			<R>237</R>
+			<G>237</G>
+			<B>237</B>
+			<ALPHA>127</ALPHA>
+		</OUTLINECOLOR>
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+		<OUTLINEBITMAP>Main_Quadrangle_BG.png</OUTLINEBITMAP>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	<!-- Label : 체력 프로그래스바 잔여량 숫자 표기 -->
+	<ZOUTLINELABEL item="InGame_HP_Amount"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>391</X>
+			<Y>-3</Y>
+			<W>52</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTb20b</FONT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<LABELTEXT>999</LABELTEXT>
+	</ZOUTLINELABEL>
+	
+	<!-- PICTURE : AP 프로그래스바 뒷배경 -->
+	<PICTURE item="CombatAPBG" parent="HPAPFrame">
+		<BOUNDS>
+			<X>87</X>
+			<Y>56</Y>
+			<W>366</W> 
+			<H>26</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_HPBar.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : AP 표시 그라디언트 선형 프로그래스바1-->
+	<GRADIENTLINEARPROGRESSBAR item="CombatAPProgressBar1"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>59</Y>
+			<W>118</W> 
+			<H>20</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>23</R>
+				<G>87</G>
+				<B>125</B>
+			</BEGIN>
+			<END>
+				<R>29</R>
+				<G>95</G>
+				<B>139</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</EMPTYCOLOR>
+		<OUTLINECOLOR>
+			<R>59</R>
+			<G>146</G>
+			<B>189</B>
+		</OUTLINECOLOR>
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+		<OUTLINEBITMAP>Main_Quadrangle_BG.png</OUTLINEBITMAP>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : AP 표시 그라디언트 선형 프로그래스바2-->
+	<GRADIENTLINEARPROGRESSBAR item="CombatAPProgressBar2"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>211</X>
+			<Y>59</Y>
+			<W>118</W> 
+			<H>20</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>30</R>
+				<G>97</G>
+				<B>141</B>
+			</BEGIN>
+			<END>
+				<R>39</R>
+				<G>109</G>
+				<B>159</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</EMPTYCOLOR>
+		<OUTLINECOLOR>
+			<R>59</R>
+			<G>146</G>
+			<B>189</B>
+		</OUTLINECOLOR>
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+		<OUTLINEBITMAP>Main_Quadrangle_BG.png</OUTLINEBITMAP>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : AP 표시 그라디언트 선형 프로그래스바3-->
+	<GRADIENTLINEARPROGRESSBAR item="CombatAPProgressBar3"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>332</X>
+			<Y>59</Y>
+			<W>118</W> 
+			<H>20</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>40</R>
+				<G>111</G>
+				<B>162</B>
+			</BEGIN>
+			<END>
+				<R>47</R>
+				<G>119</G>
+				<B>175</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</EMPTYCOLOR>
+		<OUTLINECOLOR>
+			<R>59</R>
+			<G>146</G>
+			<B>189</B>
+		</OUTLINECOLOR>
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+		<OUTLINEBITMAP>Main_Quadrangle_BG.png</OUTLINEBITMAP>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	<!-- Label : AP 프로그래스바 잔여량 숫자 표기 -->
+	<ZOUTLINELABEL item="InGame_AP_Amount"  parent="HPAPFrame">
+		<BOUNDS>
+			<X>391</X>
+			<Y>43</Y>
+			<W>52</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTb20b</FONT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<LABELTEXT>999</LABELTEXT>
+	</ZOUTLINELABEL>
+	
+<!-- # Weapon profile ////////////////////////////////////////////-->
+	<!-- FRAME : 무기 프로필 프레임 -->
+	<FRAME item="InGame_WeaponProfileFrame" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>1529</X>
+			<Y>908</Y>
+			<W>350</W> 
+			<H>150</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>	
+	
+	<!-- PICTURE : 무기 프로필 뒷배경 -->
+	<PICTURE item="InGame_WeaponProfileBG" parent="InGame_WeaponProfileFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>15</Y>
+			<W>350</W> 
+			<H>122</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_WeaponBackground.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 잔탄수 아이콘 -->
+	<PICTURE item="InGame_AmmoIcon" parent="InGame_WeaponProfileBG">
+		<BOUNDS>
+			<X>19</X>
+			<Y>52</Y>
+			<W>16</W> 
+			<H>16</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_BulletIcon.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 탄창 내 잔탄 표시 -->
+	<LABEL item="InGame_CurrentAmmo"  parent="InGame_WeaponProfileBG">
+		<BOUNDS>
+			<X>10</X>
+			<Y>6</Y>
+			<W>80</W>
+			<H>38</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa23b</FONT>
+		<TEXTCOLOR>
+			<R>231</R>
+			<G>160</G>
+			<B>58</B>
+		</TEXTCOLOR>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	<!-- Label : 탄창 외 잔탄 표시 -->
+	<LABEL item="InGame_ExtraAmmo"  parent="InGame_WeaponProfileBG">
+		<BOUNDS>
+			<X>42</X>
+			<Y>48</Y>
+			<W>50</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	<!-- Label : 무기 이름 표시 -->
+	<LABEL item="InGame_WeaponName"  parent="InGame_WeaponProfileBG">
+		<BOUNDS>
+			<X>16</X>
+			<Y>87</Y>
+			<W>150</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<!-- PICTURE : 무기 아이콘 -->
+	<PICTURE item="InGame_WeaponIcon" parent="InGame_WeaponProfileBG">
+		<BOUNDS>
+			<X>1672</X>
+			<Y>942</Y>
+			<W>180</W> 
+			<H>80</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : 현재 장탄수 표시 그라디언트 선형 프로그래스바-->
+	<GRADIENTLINEARPROGRESSBAR item="InGame_AmmoProgressBar"  parent="InGame_WeaponProfileFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>350</W> 
+			<H>10</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>14</R>
+				<G>254</G>
+				<B>206</B>
+			</BEGIN>
+			<END>
+				<R>0</R>
+				<G>172</G>
+				<B>141</B>
+			</END>
+		</FILLCOLOR>
+		<FILLCOLOR> <!-- 1 -->
+			<INDEX>1</INDEX>
+			<BEGIN>
+				<R>232</R>
+				<G>128</G>
+				<B>58</B>
+			</BEGIN>
+			<END>
+				<R>255</R>
+				<G>179</G>
+				<B>60</B>
+			</END>
+		</FILLCOLOR>
+		<FILLCOLOR> <!-- 2 -->
+			<INDEX>2</INDEX>
+			<BEGIN>
+				<R>207</R>
+				<G>60</G>
+				<B>56</B>
+			</BEGIN>
+			<END>
+				<R>216</R>
+				<G>81</G>
+				<B>29</B>
+			</END>
+		</FILLCOLOR>
+		<OUTLINECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>127</ALPHA>
+		</OUTLINECOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>153</ALPHA>
+		</EMPTYCOLOR>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	
+<!-- # Ammo alarm ////////////////////////////////////////////-->
+	<!-- PICTURE : 잔탄 알리미 (스크린 중앙)-->
+	<PICTURE item="InGame_AmmoAlarm" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1006</X>
+			<Y>525</Y>
+			<W>112</W> 
+			<H>34</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_Reload.png</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- # kill praise effects ////////////////////////////////////////////-->
+	<!-- PICTURE : 연속 킬 이펙트 (판타스틱)-->
+	<PICTURE item="InGame_ef_Fantastic" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>594</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Fantastic.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 연속 킬 이펙트 (도미네이팅)-->
+	<PICTURE item="InGame_ef_Dominating" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>594</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Dominating.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 연속 킬 이펙트 (언스탑터블)-->
+	<PICTURE item="InGame_ef_Unstoppable" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>594</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Unstoppable.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 연속 킬 이펙트 (렘페이지)-->
+	<PICTURE item="InGame_ef_Rampage" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>594</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Rampage.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 연속 킬 이펙트 (엑셀런트)-->
+	<PICTURE item="InGame_ef_Excellent" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>594</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Excellent.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 연속 킬 이펙트 (언블리버블)-->
+	<PICTURE item="InGame_ef_Unbelievable" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>594</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Unbelievable.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 연속 킬 이펙트 (헤드샷)-->
+	<PICTURE item="InGame_ef_Headshot" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>1508</X>
+			<Y>665</Y>
+			<W>412</W> 
+			<H>62</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>InGame_ef_Headshot.png</BITMAP>
+	</PICTURE>
+	
+	
+<!-- # Combo effects ////////////////////////////////////////////-->
+	<!-- ZCOMBOWIDGET : 콤보 이펙트 관리 위젯-->
+	<ZCOMBOWIDGET item="InGame_ComboWidget" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+	</ZCOMBOWIDGET>
+	
+	<!-- PICTURE : 콤보 숫자 이펙트 (10자리)-->
+	<PICTURE item="InGame_combo_TenDigits" parent="InGame_ComboWidget">
+		<BOUNDS>
+			<X>1657</X>
+			<Y>359</Y>
+			<W>42</W> 
+			<H>74</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_Combo_0.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 콤보 숫자 이펙트 (1자리)-->
+	<PICTURE item="InGame_combo_OneDigits" parent="InGame_ComboWidget">
+		<BOUNDS>
+			<X>1693</X>
+			<Y>359</Y>
+			<W>42</W> 
+			<H>74</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<BITMAP>Ingame_Combo_0.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 콤보 문구 (COMBO)-->
+	<PICTURE item="InGame_comboWord" parent="InGame_ComboWidget">
+		<BOUNDS>
+			<X>1745</X>
+			<Y>383</Y>
+			<W>144</W> 
+			<H>56</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<BITMAP>Ingame_Combo.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 콤보 랭크 문구 이펙트-->
+	<PICTURE item="InGame_comboRank" parent="InGame_ComboWidget">
+		<BOUNDS>
+			<X>1541</X>
+			<Y>450</Y>
+			<W>346</W> 
+			<H>60</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<BITMAP>InGame_combo_good.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 콤보 밑줄-->
+	<PICTURE item="InGame_comboDivider" parent="InGame_ComboWidget">
+		<BOUNDS>
+			<X>1482</X>
+			<Y>440</Y>
+			<W>438</W> 
+			<H>5</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<BITMAP>Ingame_ComboBoundary.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 히트 문구 이미지-->
+	<PICTURE item="InGame_comboHit" parent="InGame_ComboWidget">
+		<BOUNDS>
+			<X>1662</X>
+			<Y>384</Y>
+			<W>74</W> 
+			<H>54</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<BITMAP>Ingame_Hit.png</BITMAP>
+	</PICTURE>
+	
+	
+<!-- # Kill score ////////////////////////////////////////////-->
+	<!-- PICTURE : 남은 시간 배경 이미지-->
+	<PICTURE item="InGame_TimeBackground" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>730</X>
+			<Y>33</Y>
+			<W>460</W> 
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_TimeBackground.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 남은 시간 텍스트 -->
+	<LABEL item="InGame_RemainTime"  parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>926</X>
+			<Y>28</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTb23b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>11:00</TEXT>
+	</LABEL>
+	
+	<!-- PICTURE : 개인 목표 배경 테두리-->
+	<PICTURE item="InGame_PersonalObject_boundary" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>828</X>
+			<Y>78</Y>
+			<W>165</W> 
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_ObjectiveBoundary.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 개인전 목표 카테고리 -->
+	<LABEL item="InGame_PersonalObject_category"  parent="InGame_PersonalObject_boundary">
+		<BOUNDS>
+			<X>28</X>
+			<Y>5</Y>
+			<W>86</W>
+			<H>34</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>				<!-- 폰트 문제로 인해서 수직 정렬은 center를 사용 불가 (팀전도 동일) -->
+		</TEXTALIGN>
+		<FONT>FONTa17b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>kill</TEXT>
+	</LABEL>
+	
+	<!-- Label : 개인전 목표치 -->
+	<LABEL item="InGame_PersonalObject_target"  parent="InGame_PersonalObject_boundary">
+		<BOUNDS>
+			<X>40</X>
+			<Y>-2</Y>
+			<W>36</W>
+			<H>48</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa17b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>kill</TEXT>
+	</LABEL>
+	
+	<!-- ZMLabel : 개인전 목표 진행도 -->
+	<ZMLABEL item="InGame_PersonalObject_progress" parent="CombatInterfaceFrame">
+		<FONT>FONTb23b_01</FONT>
+		<BOUNDS>
+			<X>1008</X>
+			<Y>78</Y>
+			<W>88</W>
+			<H>48</H>
+		</BOUNDS>
+		<COLOR type="bg">
+			<R>24</R>
+			<G>93</G>
+			<B>141</B>
+		</COLOR>
+		<COLOR type="edge">
+			<R>46</R>
+			<G>143</G>
+			<B>179</B>
+		</COLOR>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</ZMLABEL>
+	
+	<!-- PICTURE : 팀 목표 배경 테두리-->
+	<PICTURE item="InGame_TeamObject_boundary" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>877</X>
+			<Y>78</Y>
+			<W>166</W> 
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_ObjectiveBoundary.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 팀전 목표 카테고리 -->
+	<LABEL item="InGame_TeamObject_category"  parent="InGame_TeamObject_boundary">
+		<BOUNDS>
+			<X>20</X>
+			<Y>5</Y>
+			<W>86</W>
+			<H>36</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa17b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>kill</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀전 목표치 -->
+	<LABEL item="InGame_TeamObject_target"  parent="InGame_TeamObject_boundary">
+		<BOUNDS>
+			<X>114</X>
+			<Y>-2</Y>
+			<W>36</W>
+			<H>48</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa17b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>kill</TEXT>
+	</LABEL>
+	
+	<!-- ZMLabel : 팀전 블루팀 목표 진행도 -->
+	<ZMLABEL item="InGame_BlueTeamObject_progress" parent="CombatInterfaceFrame">
+		<FONT>FONTb23b_01</FONT>
+		<BOUNDS>
+			<X>782</X>
+			<Y>78</Y>
+			<W>88</W>
+			<H>48</H>
+		</BOUNDS>
+		<COLOR type="bg">
+			<R>24</R>
+			<G>93</G>
+			<B>141</B>
+		</COLOR>
+		<COLOR type="edge">
+			<R>46</R>
+			<G>143</G>
+			<B>179</B>
+		</COLOR>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</ZMLABEL>
+	
+	<!-- ZMLabel : 팀전 레드팀 목표 진행도 -->
+	<ZMLABEL item="InGame_RedTeamObject_progress" parent="CombatInterfaceFrame">
+		<FONT>FONTb23b_01</FONT>
+		<BOUNDS>
+			<X>1051</X>
+			<Y>78</Y>
+			<W>88</W>
+			<H>48</H>
+		</BOUNDS>
+		<COLOR type="bg">
+			<R>143</R>
+			<G>45</G>
+			<B>42</B>
+		</COLOR>
+		<COLOR type="edge">
+			<R>192</R>
+			<G>86</G>
+			<B>50</B>
+		</COLOR>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</ZMLABEL>
+	
+	
+<!-- # Boss HP ////////////////////////////////////////////-->
+	<!-- FRAME : 퀘스트 보스 체력 관련 UI 프레임 -->
+	<FRAME item="InGame_QuestBossUIFrame" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 퀘스트 보스 마크-->
+	<PICTURE item="InGame_QuestBoss_Mark" parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>583</X>
+			<Y>69</Y>
+			<W>76</W> 
+			<H>75</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_BossMark.png</BITMAP>
+	</PICTURE>
+	
+	<!-- ZPICTURE : 퀘스트 보스 체력 프로그래스바 뒷배경 -->
+	<ZPICTURE item="InGame_QuestBoss_HP_BG" parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>669</X>
+			<Y>94</Y>
+			<W>609</W> 
+			<H>22</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>180</ALPHA>
+		</COLOR>		
+		<STRETCH/>
+		<BITMAP>Ingame_HPBar.png</BITMAP>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<OUTLINECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</OUTLINECOLOR>
+		<VISIBLE>true</VISIBLE>
+	</ZPICTURE> 
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : 퀘스트 보스 체력 프로그래스바-->
+	<GRADIENTLINEARPROGRESSBAR item="InGame_QuestBoss_HP_ProgressBar"  parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>671</X>
+			<Y>96</Y>
+			<W>605</W> 
+			<H>18</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>176</R>
+				<G>44</G>
+				<B>13</B>
+			</BEGIN>
+			<END>
+				<R>176</R>
+				<G>44</G>
+				<B>13</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</EMPTYCOLOR>
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+		<OUTLINEBITMAP>Main_Quadrangle_BG.png</OUTLINEBITMAP>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	<!-- PICTURE : 보스 프로그래스바 주변 장식1 -->
+	<PICTURE item="InGame_QuestBoss_HP_Extra01" parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>669</X>
+			<Y>82</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : 보스 프로그래스바 주변 장식2 -->
+	<PICTURE item="InGame_QuestBoss_HP_Extra02" parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>669</X>
+			<Y>125</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : 보스 프로그래스바 주변 장식3 -->
+	<PICTURE item="InGame_QuestBoss_HP_Extra03" parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>1270</X>
+			<Y>82</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : 보스 프로그래스바 주변 장식4 -->
+	<PICTURE item="InGame_QuestBoss_HP_Extra04" parent="InGame_QuestBossUIFrame">
+		<BOUNDS>
+			<X>1270</X>
+			<Y>125</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	
+	<!-- FRAME : 챌린지 퀘스트 보스 체력 관련 UI 프레임 -->
+	<FRAME item="InGame_CQuestBossUIFrame" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>54</Y>
+			<W>1920</W> 
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 챌린지 퀘스트 보스 마크-->
+	<PICTURE item="InGame_CQuestBoss_Mark" parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>583</X>
+			<Y>69</Y>
+			<W>76</W> 
+			<H>75</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_BossMark.png</BITMAP>
+	</PICTURE>
+	
+	<!-- ZPICTURE : 챌린지 퀘스트 보스 체력 프로그래스바 뒷배경 -->
+	<ZPICTURE item="InGame_CQuestBoss_HP_BG" parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>669</X>
+			<Y>94</Y>
+			<W>609</W> 
+			<H>22</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>180</ALPHA>
+		</COLOR>		
+		<STRETCH/>
+		<BITMAP>Ingame_HPBar.png</BITMAP>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<OUTLINECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</OUTLINECOLOR>
+		<VISIBLE>true</VISIBLE>
+	</ZPICTURE> 
+	
+	<!-- GRADIENTLINEARPROGRESSBAR : 챌린지 퀘스트 보스 체력 프로그래스바-->
+	<GRADIENTLINEARPROGRESSBAR item="InGame_CQuestBoss_HP_ProgressBar"  parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>671</X>
+			<Y>96</Y>
+			<W>605</W> 
+			<H>18</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>176</R>
+				<G>44</G>
+				<B>13</B>
+			</BEGIN>
+			<END>
+				<R>176</R>
+				<G>44</G>
+				<B>13</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</EMPTYCOLOR>
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>
+		<OUTLINEBITMAP>Main_Quadrangle_BG.png</OUTLINEBITMAP>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+	
+	<!-- PICTURE : 챌린지 퀘스트 보스 프로그래스바 주변 장식1 -->
+	<PICTURE item="InGame_CQuestBoss_HP_Extra01" parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>669</X>
+			<Y>82</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : 챌린지 퀘스트 보스 프로그래스바 주변 장식2 -->
+	<PICTURE item="InGame_CQuestBoss_HP_Extra02" parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>669</X>
+			<Y>125</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : 챌린지 퀘스트 보스 프로그래스바 주변 장식3 -->
+	<PICTURE item="InGame_CQuestBoss_HP_Extra03" parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>1270</X>
+			<Y>82</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- PICTURE : 챌린지 퀘스트 보스 프로그래스바 주변 장식4 -->
+	<PICTURE item="InGame_CQuestBoss_HP_Extra04" parent="InGame_CQuestBossUIFrame">
+		<BOUNDS>
+			<X>1270</X>
+			<Y>125</Y>
+			<W>8</W> 
+			<H>2</H>
+		</BOUNDS>
+		<COLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>128</ALPHA>
+		</COLOR>	
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+	</PICTURE> 
+	
+	
+<!-- # Duel mode UI ////////////////////////////////////////////-->
+	<!-- FRAME : 연속 승리 수 프레임 -->
+	<FRAME item="InGame_Duel_WinFrame" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>1920</W> 
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 듀얼 모드 연속 승리 아이콘-->
+	<PICTURE item="InGame_Duel_WinIcon" parent="InGame_Duel_WinFrame">
+		<BOUNDS>
+			<X>5</X>
+			<Y>5</Y>
+			<W>64</W> 
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_Win.png</BITMAP>
+	</PICTURE>
+
+	<!-- PICTURE : 듀얼 모드 연속 승리 횟수 (10자리)-->
+	<PICTURE item="InGame_Duel_WinCount_TenDigits" parent="InGame_Duel_WinFrame">
+		<BOUNDS>
+			<X>67</X>
+			<Y>5</Y>
+			<W>23</W> 
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>InGame_Duel_0.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 듀얼 모드 연속 승리 횟수 (10자리)-->
+	<PICTURE item="InGame_Duel_WinCount_OneDigits" parent="InGame_Duel_WinFrame">
+		<BOUNDS>
+			<X>81</X>
+			<Y>5</Y>
+			<W>23</W> 
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>InGame_Duel_0.png</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- FRAME : 듀얼 맞상대 프레임 -->
+	<FRAME item="InGame_Duel_VSFrame" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>260</Y>
+			<W>400</W> 
+			<H>130</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- PICTURE : 듀얼 모드 맞상대 UI 배경-->
+	<PICTURE item="InGame_Duel_BG" parent="InGame_Duel_VSFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>386</W> 
+			<H>74</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_VersusBG.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 듀얼 모드 맞상대 vs아이콘-->
+	<PICTURE item="InGame_Duel_VSIcon" parent="InGame_Duel_VSFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>5</Y>
+			<W>120</W> 
+			<H>126</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Ingame_Versus.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 레벨(LV) 텍스트 표시 -->
+	<LABEL item="InGame_Duel_LV"  parent="InGame_Duel_VSFrame">
+		<BOUNDS>
+			<X>117</X>
+			<Y>41</Y>
+			<W>53</W>
+			<H>17</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Lv</TEXT>
+	</LABEL>
+	
+	<!-- Label : 닉네임 텍스트 표시 -->
+	<LABEL item="InGame_Duel_Name"  parent="InGame_Duel_VSFrame">
+		<BOUNDS>
+			<X>117</X>
+			<Y>69</Y>
+			<W>141</W>
+			<H>20</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<FONT>FONTb14b</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Lv</TEXT>
+	</LABEL>
+	
+	
+<!-- # ScoreBoard [CHALLENGEQUEST] ////////////////////////////////////////////-->
+	<!-- FRAME : 챌린지 퀘스트 스코어 보드 프레임 -->
+	<FRAME item="ScoreBoard_ChallengeQuest" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- PICTURE : 챌린지 퀘스트 스코어 보드 배경-->
+	<PICTURE item="ScoreBoard_ChallengeQuest_BG" parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>430</X>
+			<Y>299</Y>
+			<W>1060</W> 
+			<H>478</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_QuestBackground.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 챌린지 퀘스트 스코어 보드 마크-->
+	<PICTURE item="ScoreBoard_ChallengeQuest_Mark" parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>467</X>
+			<Y>343</Y>
+			<W>86</W> 
+			<H>86</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Mark_DeathMatch.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 챌린지 퀘스트 스코어 보드 맵 이름-->
+	<PICTURE item="ScoreBoard_ChallengeQuest_MapName" parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>589</X>
+			<Y>376</Y>
+			<W>300</W> 
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Map_WeaponShop.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 챌린지 퀘스트 스코어 보드 필드 구분선-->
+	<PICTURE item="ScoreBoard_ChallengeQuest_FieldLine" parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>468</X>
+			<Y>465</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline_Challenge.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 챌린지 퀘스트 스코어 보드 잔여 몬스터 수 배경-->
+	<PICTURE item="ScoreBoard_ChallengeQuest_MonsterCountBG" parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>462</X>
+			<Y>660</Y>
+			<W>1000</W> 
+			<H>88</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_MonsterBG.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 챌린지 퀘스트 스코어 보드 방제목 -->
+	<LABEL item="ScoreBoard_ChallengeQuest_Title"  parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>597</X>
+			<Y>353</Y>
+			<W>206</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTb13</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>212</R>
+			<G>212</G>
+			<B>212</B>
+		</TEXTCOLOR>
+		<TEXT>Title</TEXT>
+	</LABEL>
+	
+	<!-- Label : 챌린지 퀘스트 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_ChallengeQuest_Progress"  parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>1284</X>
+			<Y>349</Y>
+			<W>220</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>188</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 챌린지 퀘스트 스코어 보드 게임 타입 -->
+	<LABEL item="ScoreBoard_ChallengeQuest_GameType"  parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>1302</X>
+			<Y>392</Y>
+			<W>150</W>
+			<H>28</H>
+		</BOUNDS>
+		<FONT>FONTb17b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>188</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 챌린지 퀘스트 스코어 보드 잔여 몬스터 수 -->
+	<LABEL item="ScoreBoard_ChallengeQuest_MonsterCount"  parent="ScoreBoard_ChallengeQuest">
+		<BOUNDS>
+			<X>870</X>
+			<Y>690</Y>
+			<W>192</W>
+			<H>23</H>
+		</BOUNDS>
+		<FONT>FONTb18b</FONT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>192</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+
+
+<!-- # ScoreBoard [QUEST] ////////////////////////////////////////////-->
+	<!-- FRAME : 퀘스트 스코어 보드 프레임 -->
+	<FRAME item="ScoreBoard_Quest" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- PICTURE : 퀘스트 스코어 보드 배경-->
+	<PICTURE item="ScoreBoard_Quest_BG" parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>430</X>
+			<Y>299</Y>
+			<W>1060</W> 
+			<H>478</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_QuestBackground.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 퀘스트 스코어 보드 마크-->
+	<PICTURE item="ScoreBoard_Quest_Mark" parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>467</X>
+			<Y>343</Y>
+			<W>86</W> 
+			<H>86</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Mark_DeathMatch.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 퀘스트 스코어 보드 맵 이름-->
+	<PICTURE item="ScoreBoard_Quest_MapName" parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>589</X>
+			<Y>376</Y>
+			<W>300</W> 
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Map_WeaponShop.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 퀘스트 스코어 보드 필드 구분선-->
+	<PICTURE item="ScoreBoard_Quest_FieldLine" parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>468</X>
+			<Y>465</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline_Quest.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 퀘스트 스코어 보드 잔여 몬스터 수 배경-->
+	<PICTURE item="ScoreBoard_Quest_MonsterCountBG" parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>462</X>
+			<Y>660</Y>
+			<W>1000</W> 
+			<H>88</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_MonsterBG.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 퀘스트 스코어 보드 방제목 -->
+	<LABEL item="ScoreBoard_Quest_Title"  parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>597</X>
+			<Y>353</Y>
+			<W>206</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTb13</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>212</R>
+			<G>212</G>
+			<B>212</B>
+		</TEXTCOLOR>
+		<TEXT>Title</TEXT>
+	</LABEL>
+	
+	<!-- Label : 퀘스트 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Quest_Progress"  parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>1284</X>
+			<Y>349</Y>
+			<W>220</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>188</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 퀘스트 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Quest_GameType"  parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>1358</X>
+			<Y>396</Y>
+			<W>94</W>
+			<H>28</H>
+		</BOUNDS>
+		<FONT>FONTb18b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>188</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 퀘스트 스코어 보드 잔여 몬스터 수 -->
+	<LABEL item="ScoreBoard_Quest_MonsterCount"  parent="ScoreBoard_Quest">
+		<BOUNDS>
+			<X>870</X>
+			<Y>690</Y>
+			<W>192</W>
+			<H>23</H>
+		</BOUNDS>
+		<FONT>FONTb18b</FONT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>192</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+
+
+<!-- # ScoreBoard [SOLO] ////////////////////////////////////////////-->
+	<!-- FRAME : 솔로 스코어 보드 프레임 -->
+	<FRAME item="ScoreBoard_Solo" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- PICTURE : 솔로 스코어 보드 배경-->
+	<PICTURE item="ScoreBoard_Solo_BG" parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>430</X>
+			<Y>157</Y>
+			<W>1060</W> 
+			<H>760</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Background_Solo.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 솔로 스코어 보드 마크-->
+	<PICTURE item="ScoreBoard_Solo_Mark" parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>466</X>
+			<Y>181</Y>
+			<W>86</W> 
+			<H>86</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Mark_DeathMatch.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 솔로 스코어 보드 맵 이름-->
+	<PICTURE item="ScoreBoard_Solo_MapName" parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>588</X>
+			<Y>213</Y>
+			<W>300</W> 
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Map_WeaponShop.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 솔로 스코어 보드 필드 구분선-->
+	<PICTURE item="ScoreBoard_Solo_FieldLine" parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>468</X>
+			<Y>290</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline_Quest.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 솔로 스코어 보드 방제목 -->
+	<LABEL item="ScoreBoard_Solo_Title"  parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>597</X>
+			<Y>191</Y>
+			<W>206</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTb13</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>212</R>
+			<G>212</G>
+			<B>212</B>
+		</TEXTCOLOR>
+		<TEXT>Title</TEXT>
+	</LABEL>
+	
+	<!-- Label : 솔로 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Solo_Progress"  parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>1255</X>
+			<Y>192</Y>
+			<W>220</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>192</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 솔로 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Solo_GameType"  parent="ScoreBoard_Solo">
+		<BOUNDS>
+			<X>1152</X>
+			<Y>234</Y>
+			<W>300</W>
+			<H>28</H>
+		</BOUNDS>
+		<FONT>FONTb18b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+
+
+<!-- # ScoreBoard [TEAM ROUND] ////////////////////////////////////////////-->
+	<!-- FRAME : 팀 라운드 스코어 보드 프레임 -->
+	<FRAME item="ScoreBoard_Team_round" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 팀 라운드 스코어 보드 배경-->
+	<PICTURE item="ScoreBoard_Team_round_BG" parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>430</X>
+			<Y>90</Y>
+			<W>1060</W> 
+			<H>900</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Background_Team.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 라운드 스코어 보드 마크-->
+	<PICTURE item="ScoreBoard_Team_round_Mark" parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>464</X>
+			<Y>110</Y>
+			<W>86</W> 
+			<H>86</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Mark_DeathMatch.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 라운드 스코어 보드 맵 이름-->
+	<PICTURE item="ScoreBoard_Team_round_MapName" parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>583</X>
+			<Y>145</Y>
+			<W>300</W> 
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Map_WeaponShop.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 라운드 스코어 보드 필드 구분선 블루팀-->
+	<PICTURE item="ScoreBoard_Team_round_FieldLine_BlueTeam" parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>468</X>
+			<Y>269</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 라운드 스코어 보드 필드 구분선 레드팀-->
+	<PICTURE item="ScoreBoard_Team_round_FieldLine_RedTeam" parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>468</X>
+			<Y>643</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 팀 라운드 스코어 보드 방제목 -->
+	<LABEL item="ScoreBoard_Team_round_Title"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>591</X>
+			<Y>122</Y>
+			<W>206</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTb13</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>212</R>
+			<G>212</G>
+			<B>212</B>
+		</TEXTCOLOR>
+		<TEXT>Title</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀 라운드 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Team_round_Progress"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>1255</X>
+			<Y>123</Y>
+			<W>220</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>192</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀 라운드 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Team_round_GameType"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>1147</X>
+			<Y>165</Y>
+			<W>300</W>
+			<H>28</H>
+		</BOUNDS>
+		<FONT>FONTb18b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+
+	<!-- ZGRADIENTRECT : 팀 라운드 스코어 보드 블루팀 배경 -->
+	<ZGRADIENTRECT item="ScoreBoard_Team_round_BlueTeam_BG"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>468</X>
+			<Y>218</Y>
+			<W>985</W>
+			<H>41</H>
+		</BOUNDS>
+		<COLOR type="outlineLeft">
+			<R>134</R>
+			<G>230</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="outlineRight">
+			<R>72</R>
+			<G>146</G>
+			<B>165</B>
+		</COLOR>
+		<COLOR type="rectLeft">
+			<R>45</R>
+			<G>127</G>
+			<B>145</B>
+		</COLOR>
+		<COLOR type="rectRight">
+			<R>72</R>
+			<G>146</G>
+			<B>165</B>
+		</COLOR>
+	</ZGRADIENTRECT>
+
+	<!-- Label : 팀 라운드 스코어 보드 블루팀 텍스트 -->
+	<LABEL item="ScoreBoard_Team_round_BlueTeam_Text"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>1225</X>
+			<Y>225</Y>
+			<W>200</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb20b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>BLUE TEAM</TEXT>
+	</LABEL>
+
+	<!-- Label : 팀 라운드 스코어 보드 블루팀 팀스코어 -->
+	<LABEL item="ScoreBoard_Team_round_BlueTeam_Score"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>498</X>
+			<Y>229</Y>
+			<W>100</W>
+			<H>22</H>
+		</BOUNDS>
+		<FONT>FONTb17b</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>ROUND:</TEXT>
+	</LABEL>
+	
+	<!-- ZGRADIENTRECT : 팀 라운드 스코어 보드 레드팀 배경 -->
+	<ZGRADIENTRECT item="ScoreBoard_Team_round_RedTeam_BG"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>468</X>
+			<Y>593</Y>
+			<W>985</W>
+			<H>41</H>
+		</BOUNDS>
+		<COLOR type="outlineLeft">
+			<R>248</R>
+			<G>133</G>
+			<B>124</B>
+		</COLOR>
+		<COLOR type="outlineRight">
+			<R>193</R>
+			<G>79</G>
+			<B>79</B>
+		</COLOR>
+		<COLOR type="rectLeft">
+			<R>169</R>
+			<G>78</G>
+			<B>78</B>
+		</COLOR>
+		<COLOR type="rectRight">
+			<R>126</R>
+			<G>49</G>
+			<B>49</B>
+		</COLOR>
+	</ZGRADIENTRECT>
+
+	<!-- Label : 팀 라운드 스코어 보드 레드팀 텍스트 -->
+	<LABEL item="ScoreBoard_Team_round_RedTeam_Text"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>1225</X>
+			<Y>599</Y>
+			<W>200</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb20b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>RED TEAM</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀 라운드 스코어 보드 레드팀 팀스코어 -->
+	<LABEL item="ScoreBoard_Team_round_RedTeam_Score"  parent="ScoreBoard_Team_round">
+		<BOUNDS>
+			<X>498</X>
+			<Y>602</Y>
+			<W>100</W>
+			<H>22</H>
+		</BOUNDS>
+		<FONT>FONTb17b</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>ROUND:</TEXT>
+	</LABEL>
+	
+
+<!-- # ScoreBoard [TEAM KILL] ////////////////////////////////////////////-->
+	<!-- FRAME : 팀 킬 스코어 보드 프레임 -->
+	<FRAME item="ScoreBoard_Team_kill" parent="CombatInterfaceFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 팀 킬 스코어 보드 배경-->
+	<PICTURE item="ScoreBoard_Team_kill_BG" parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>430</X>
+			<Y>90</Y>
+			<W>1060</W> 
+			<H>900</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Background_Team.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 킬 스코어 보드 마크-->
+	<PICTURE item="ScoreBoard_Team_kill_Mark" parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>464</X>
+			<Y>110</Y>
+			<W>86</W> 
+			<H>86</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Mark_DeathMatch.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 킬 스코어 보드 맵 이름-->
+	<PICTURE item="ScoreBoard_Team_kill_MapName" parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>583</X>
+			<Y>145</Y>
+			<W>300</W> 
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Map_WeaponShop.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 킬 스코어 보드 필드 구분선 블루팀-->
+	<PICTURE item="ScoreBoard_Team_kill_FieldLine_BlueTeam" parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>468</X>
+			<Y>269</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 팀 킬 스코어 보드 필드 구분선 레드팀-->
+	<PICTURE item="ScoreBoard_Team_kill_FieldLine_RedTeam" parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>468</X>
+			<Y>643</Y>
+			<W>985</W> 
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Scoreboard_Subjectline.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 팀 킬 스코어 보드 방제목 -->
+	<LABEL item="ScoreBoard_Team_kill_Title"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>591</X>
+			<Y>122</Y>
+			<W>206</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTb13</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>212</R>
+			<G>212</G>
+			<B>212</B>
+		</TEXTCOLOR>
+		<TEXT>Title</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀 킬 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Team_kill_Progress"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>1255</X>
+			<Y>123</Y>
+			<W>220</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>192</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀 킬 스코어 보드 진행도 -->
+	<LABEL item="ScoreBoard_Team_kill_GameType"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>1147</X>
+			<Y>165</Y>
+			<W>300</W>
+			<H>28</H>
+		</BOUNDS>
+		<FONT>FONTb18b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Progress</TEXT>
+	</LABEL>
+
+	<!-- ZGRADIENTRECT : 팀 킬 스코어 보드 블루팀 배경 -->
+	<ZGRADIENTRECT item="ScoreBoard_Team_kill_BlueTeam_BG"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>468</X>
+			<Y>218</Y>
+			<W>985</W>
+			<H>41</H>
+		</BOUNDS>
+		<COLOR type="outlineLeft">
+			<R>134</R>
+			<G>230</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="outlineRight">
+			<R>72</R>
+			<G>146</G>
+			<B>165</B>
+		</COLOR>
+		<COLOR type="rectLeft">
+			<R>45</R>
+			<G>127</G>
+			<B>145</B>
+		</COLOR>
+		<COLOR type="rectRight">
+			<R>72</R>
+			<G>146</G>
+			<B>165</B>
+		</COLOR>
+	</ZGRADIENTRECT>
+
+	<!-- Label : 팀 킬 스코어 보드 블루팀 텍스트 -->
+	<LABEL item="ScoreBoard_Team_kill_BlueTeam_Text"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>1225</X>
+			<Y>225</Y>
+			<W>200</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb20b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>BLUE TEAM</TEXT>
+	</LABEL>
+
+	<!-- Label : 팀 킬 스코어 보드 블루팀 팀스코어 -->
+	<LABEL item="ScoreBoard_Team_kill_BlueTeam_Score"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>498</X>
+			<Y>226</Y>
+			<W>100</W>
+			<H>18</H>
+		</BOUNDS>
+		<FONT>FONTb17b</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>KILL:</TEXT>
+	</LABEL>
+	
+	<!-- ZGRADIENTRECT : 팀 킬 스코어 보드 레드팀 배경 -->
+	<ZGRADIENTRECT item="ScoreBoard_Team_kill_RedTeam_BG"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>468</X>
+			<Y>592</Y>
+			<W>985</W>
+			<H>41</H>
+		</BOUNDS>
+		<COLOR type="outlineLeft">
+			<R>248</R>
+			<G>133</G>
+			<B>124</B>
+		</COLOR>
+		<COLOR type="outlineRight">
+			<R>193</R>
+			<G>79</G>
+			<B>79</B>
+		</COLOR>
+		<COLOR type="rectLeft">
+			<R>169</R>
+			<G>78</G>
+			<B>78</B>
+		</COLOR>
+		<COLOR type="rectRight">
+			<R>126</R>
+			<G>49</G>
+			<B>49</B>
+		</COLOR>
+	</ZGRADIENTRECT>
+
+	<!-- Label : 팀 킬 스코어 보드 레드팀 텍스트 -->
+	<LABEL item="ScoreBoard_Team_kill_RedTeam_Text"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>1225</X>
+			<Y>599</Y>
+			<W>200</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTb20b</FONT>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>RED TEAM</TEXT>
+	</LABEL>
+	
+	<!-- Label : 팀 킬 스코어 보드 레드팀 팀스코어 -->
+	<LABEL item="ScoreBoard_Team_kill_RedTeam_Score"  parent="ScoreBoard_Team_kill">
+		<BOUNDS>
+			<X>498</X>
+			<Y>600</Y>
+			<W>100</W>
+			<H>18</H>
+		</BOUNDS>
+		<FONT>FONTb17b</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>KILL:</TEXT>
+	</LABEL>
+	
+<!-- # ScoreBoardViewer ////////////////////////////////////////////-->
+	<ZGScoreBoardViewer item="ScoreBoardViewer" parent="CombatInterfaceFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W> 
+			<H>1080</H>
+		</BOUNDS>
+		<ADDPRESET> <!--ChallengeQuest-->
+			<NAME>ScoreBoard_ChallengeQuest</NAME>
+			<COLOR type="base">
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>13</ALPHA>
+			</COLOR>
+			<COLOR type="overBase">
+				<R>26</R>
+				<G>26</G>
+				<B>26</B>
+				<ALPHA>184</ALPHA>
+			</COLOR>
+			<COLOR type="dead">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>154</ALPHA>
+			</COLOR>
+			<COLOR type="mychar">
+				<R>149</R>
+				<G>214</G>
+				<B>200</B>
+				<ALPHA>77</ALPHA>
+			</COLOR>
+			<COLOR type="overMychar">
+				<R>43</R>
+				<G>57</G>
+				<B>55</B>
+				<ALPHA>179</ALPHA>
+			</COLOR>
+			<COLOR type="empty">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>64</ALPHA>
+			</COLOR>
+			<COLOR type="TitleFont">
+				<R>149</R>
+				<G>153</G>
+				<B>157</B>
+			</COLOR>
+			<COLOR type="ContentFont">
+				<R>202</R>
+				<G>202</G>
+				<B>202</B>
+			</COLOR>
+			<COLOR type="MyCharContentFont">
+				<R>0</R>
+				<G>240</G>
+				<B>255</B>
+			</COLOR>
+			<BOUNDS type="startRow">
+				<X>468</X>
+				<Y>502</Y>
+				<W>985</W> 
+				<H>33</H>
+			</BOUNDS>
+			<MAXROW>4</MAXROW>
+			<INTERVAL>35</INTERVAL>
+			<FONT type="title">FONTb13</FONT>
+			<FONT type="content">FONTb16b</FONT>
+		</ADDPRESET>
+		<FIELD frame="ScoreBoard_ChallengeQuest">
+			<DATATYPE>LV</DATATYPE>
+			<BOUNDS type="bg">
+				<X>468</X>
+				<Y>502</Y>
+				<W>75</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>499</X>
+				<Y>469</Y>
+				<W>15</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>497</X>
+				<Y>512</Y>
+				<W>19</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_ChallengeQuest">
+			<DATATYPE>NAME</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>560</X>
+				<Y>469</Y>
+				<W>41</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>559</X>
+				<Y>510</Y>
+				<W>131</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_ChallengeQuest">
+			<DATATYPE>CLAN</DATATYPE>
+			<BOUNDS type="bg">
+				<X>830</X>
+				<Y>502</Y>
+				<W>273</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>845</X>
+				<Y>468</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>845</X>
+				<Y>510</Y>
+				<W>147</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_ChallengeQuest">
+			<DATATYPE>SCORE</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1210</X>
+				<Y>468</Y>
+				<W>40</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1211</X>
+				<Y>512</Y>
+				<W>39</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_ChallengeQuest">
+			<DATATYPE>PING</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1355</X>
+				<Y>502</Y>
+				<W>98</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1389</X>
+				<Y>468</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1385</X>
+				<Y>512</Y>
+				<W>39</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<ADDPRESET> <!--Quest-->
+			<NAME>ScoreBoard_Quest</NAME>
+			<COLOR type="base">
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>13</ALPHA>
+			</COLOR>
+			<COLOR type="overBase">
+				<R>26</R>
+				<G>26</G>
+				<B>26</B>
+				<ALPHA>184</ALPHA>
+			</COLOR>
+			<COLOR type="dead">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>154</ALPHA>
+			</COLOR>
+			<COLOR type="mychar">
+				<R>149</R>
+				<G>214</G>
+				<B>200</B>
+				<ALPHA>77</ALPHA>
+			</COLOR>
+			<COLOR type="overMychar">
+				<R>43</R>
+				<G>57</G>
+				<B>55</B>
+				<ALPHA>179</ALPHA>
+			</COLOR>
+			<COLOR type="empty">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>64</ALPHA>
+			</COLOR>
+			<COLOR type="TitleFont">
+				<R>149</R>
+				<G>153</G>
+				<B>157</B>
+			</COLOR>
+			<COLOR type="ContentFont">
+				<R>202</R>
+				<G>202</G>
+				<B>202</B>
+			</COLOR>
+			<COLOR type="MyCharContentFont">
+				<R>0</R>
+				<G>240</G>
+				<B>255</B>
+			</COLOR>
+			<BOUNDS type="startRow">
+				<X>468</X>
+				<Y>502</Y>
+				<W>985</W> 
+				<H>33</H>
+			</BOUNDS>
+			<MAXROW>4</MAXROW>
+			<INTERVAL>35</INTERVAL>
+			<FONT type="title">FONTb13</FONT>
+			<FONT type="content">FONTb16b</FONT>
+		</ADDPRESET>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>LV</DATATYPE>
+			<BOUNDS type="bg">
+				<X>468</X>
+				<Y>502</Y>
+				<W>75</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>499</X>
+				<Y>469</Y>
+				<W>15</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>497</X>
+				<Y>512</Y>
+				<W>19</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>NAME</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>560</X>
+				<Y>469</Y>
+				<W>41</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>559</X>
+				<Y>510</Y>
+				<W>131</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>CLAN</DATATYPE>
+			<BOUNDS type="bg">
+				<X>779</X>
+				<Y>502</Y>
+				<W>273</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>795</X>
+				<Y>468</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>795</X>
+				<Y>510</Y>
+				<W>147</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>HPAP</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1062</X>
+				<Y>468</Y>
+				<W>44</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1041</X>
+				<Y>511</Y>
+				<W>86</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>SCORE</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1160</X>
+				<Y>502</Y>
+				<W>96</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1189</X>
+				<Y>469</Y>
+				<W>40</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1190</X>
+				<Y>512</Y>
+				<W>39</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>DEATH</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1282</X>
+				<Y>468</Y>
+				<W>49</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1298</X>
+				<Y>512</Y>
+				<W>19</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Quest">
+			<DATATYPE>PING</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1355</X>
+				<Y>502</Y>
+				<W>98</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1389</X>
+				<Y>468</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1385</X>
+				<Y>512</Y>
+				<W>39</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<ADDPRESET> <!--Solo-->
+			<NAME>ScoreBoard_Solo</NAME>
+			<COLOR type="base">
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>13</ALPHA>
+			</COLOR>
+			<COLOR type="overBase">
+				<R>26</R>
+				<G>26</G>
+				<B>26</B>
+				<ALPHA>184</ALPHA>
+			</COLOR>
+			<COLOR type="dead">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>154</ALPHA>
+			</COLOR>
+			<COLOR type="mychar">
+				<R>149</R>
+				<G>214</G>
+				<B>200</B>
+				<ALPHA>77</ALPHA>
+			</COLOR>
+			<COLOR type="overMychar">
+				<R>43</R>
+				<G>57</G>
+				<B>55</B>
+				<ALPHA>179</ALPHA>
+			</COLOR>
+			<COLOR type="empty">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>64</ALPHA>
+			</COLOR>
+			<COLOR type="TitleFont">
+				<R>149</R>
+				<G>153</G>
+				<B>157</B>
+			</COLOR>
+			<COLOR type="ContentFont">
+				<R>202</R>
+				<G>202</G>
+				<B>202</B>
+			</COLOR>
+			<COLOR type="MyCharContentFont">
+				<R>0</R>
+				<G>240</G>
+				<B>255</B>
+			</COLOR>
+			<BOUNDS type="startRow">
+				<X>468</X>
+				<Y>327</Y>
+				<W>985</W> 
+				<H>33</H>
+			</BOUNDS>
+			<MAXROW>16</MAXROW>
+			<INTERVAL>35</INTERVAL>
+			<FONT type="title">FONTb13</FONT>
+			<FONT type="content">FONTb16b</FONT>
+		</ADDPRESET>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>LV</DATATYPE>
+			<BOUNDS type="bg">
+				<X>468</X>
+				<Y>327</Y>
+				<W>75</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>499</X>
+				<Y>294</Y>
+				<W>15</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>497</X>
+				<Y>337</Y>
+				<W>19</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>NAME</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>560</X>
+				<Y>294</Y>
+				<W>41</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>559</X>
+				<Y>335</Y>
+				<W>131</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>CLAN</DATATYPE>
+			<BOUNDS type="bg">
+				<X>779</X>
+				<Y>327</Y>
+				<W>223</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>795</X>
+				<Y>294</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>795</X>
+				<Y>335</Y>
+				<W>147</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>DAMAGE</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1016</X>
+				<Y>294</Y>
+				<W>131</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1054</X>
+				<Y>337</Y>
+				<W>60</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>KILL</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1160</X>
+				<Y>327</Y>
+				<W>96</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1194</X>
+				<Y>294</Y>
+				<W>29</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1200</X>
+				<Y>337</Y>
+				<W>20</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>DEATH</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1283</X>
+				<Y>294</Y>
+				<W>49</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1298</X>
+				<Y>337</Y>
+				<W>20</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Solo">
+			<DATATYPE>PING</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1355</X>
+				<Y>327</Y>
+				<W>98</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1388</X>
+				<Y>294</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1385</X>
+				<Y>337</Y>
+				<W>40</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<ADDPRESET> <!--Team round-->
+			<NAME>ScoreBoard_Team_round</NAME>
+			<COLOR type="base">
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>13</ALPHA>
+			</COLOR>
+			<COLOR type="overBase">
+				<R>26</R>
+				<G>26</G>
+				<B>26</B>
+				<ALPHA>184</ALPHA>
+			</COLOR>
+			<COLOR type="dead">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>154</ALPHA>
+			</COLOR>
+			<COLOR type="mychar">
+				<R>149</R>
+				<G>214</G>
+				<B>200</B>
+				<ALPHA>77</ALPHA>
+			</COLOR>
+			<COLOR type="overMychar">
+				<R>43</R>
+				<G>57</G>
+				<B>55</B>
+				<ALPHA>179</ALPHA>
+			</COLOR>
+			<COLOR type="empty">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>64</ALPHA>
+			</COLOR>
+			<COLOR type="TitleFont">
+				<R>149</R>
+				<G>153</G>
+				<B>157</B>
+			</COLOR>
+			<COLOR type="ContentFont">
+				<R>202</R>
+				<G>202</G>
+				<B>202</B>
+			</COLOR>
+			<COLOR type="MyCharContentFont">
+				<R>0</R>
+				<G>240</G>
+				<B>255</B>
+			</COLOR>
+			<BOUNDS type="startRow">
+				<X>468</X>
+				<Y>306</Y>
+				<W>985</W> 
+				<H>33</H>
+			</BOUNDS>
+			<MAXROW>8</MAXROW>
+			<INTERVAL>35</INTERVAL>
+			<TEAMMODEINTERVAL>374</TEAMMODEINTERVAL>
+			<FONT type="title">FONTb13</FONT>
+			<FONT type="content">FONTb16b</FONT>
+		</ADDPRESET>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>LV</DATATYPE>
+			<BOUNDS type="bg">
+				<X>468</X>
+				<Y>306</Y>
+				<W>75</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>499</X>
+				<Y>273</Y>
+				<W>15</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>497</X>
+				<Y>316</Y>
+				<W>19</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>NAME</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>560</X>
+				<Y>273</Y>
+				<W>41</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>559</X>
+				<Y>314</Y>
+				<W>131</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>CLAN</DATATYPE>
+			<BOUNDS type="bg">
+				<X>779</X>
+				<Y>306</Y>
+				<W>223</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>795</X>
+				<Y>272</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>795</X>
+				<Y>314</Y>
+				<W>147</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>DAMAGE</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1017</X>
+				<Y>273</Y>
+				<W>131</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1054</X>
+				<Y>316</Y>
+				<W>60</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>KILL</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1160</X>
+				<Y>306</Y>
+				<W>96</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1194</X>
+				<Y>272</Y>
+				<W>29</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1200</X>
+				<Y>316</Y>
+				<W>20</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>DEATH</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1283</X>
+				<Y>272</Y>
+				<W>49</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1298</X>
+				<Y>316</Y>
+				<W>20</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_round">
+			<DATATYPE>PING</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1355</X>
+				<Y>306</Y>
+				<W>98</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1388</X>
+				<Y>272</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1385</X>
+				<Y>316</Y>
+				<W>40</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<ADDPRESET> <!--Team kill-->
+			<NAME>ScoreBoard_Team_kill</NAME>
+			<COLOR type="base">
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>13</ALPHA>
+			</COLOR>
+			<COLOR type="overBase">
+				<R>26</R>
+				<G>26</G>
+				<B>26</B>
+				<ALPHA>184</ALPHA>
+			</COLOR>
+			<COLOR type="dead">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>154</ALPHA>
+			</COLOR>
+			<COLOR type="mychar">
+				<R>149</R>
+				<G>214</G>
+				<B>200</B>
+				<ALPHA>77</ALPHA>
+			</COLOR>
+			<COLOR type="overMychar">
+				<R>43</R>
+				<G>57</G>
+				<B>55</B>
+				<ALPHA>179</ALPHA>
+			</COLOR>
+			<COLOR type="empty">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>64</ALPHA>
+			</COLOR>
+			<COLOR type="TitleFont">
+				<R>149</R>
+				<G>153</G>
+				<B>157</B>
+			</COLOR>
+			<COLOR type="ContentFont">
+				<R>202</R>
+				<G>202</G>
+				<B>202</B>
+			</COLOR>
+			<COLOR type="MyCharContentFont">
+				<R>0</R>
+				<G>240</G>
+				<B>255</B>
+			</COLOR>
+			<BOUNDS type="startRow">
+				<X>468</X>
+				<Y>306</Y>
+				<W>985</W> 
+				<H>33</H>
+			</BOUNDS>
+			<MAXROW>8</MAXROW>
+			<INTERVAL>35</INTERVAL>
+			<TEAMMODEINTERVAL>374</TEAMMODEINTERVAL>
+			<FONT type="title">FONTb13</FONT>
+			<FONT type="content">FONTb16b</FONT>
+		</ADDPRESET>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>LV</DATATYPE>
+			<BOUNDS type="bg">
+				<X>468</X>
+				<Y>306</Y>
+				<W>75</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>499</X>
+				<Y>273</Y>
+				<W>15</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>497</X>
+				<Y>316</Y>
+				<W>19</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>NAME</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>560</X>
+				<Y>273</Y>
+				<W>41</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>559</X>
+				<Y>314</Y>
+				<W>131</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>CLAN</DATATYPE>
+			<BOUNDS type="bg">
+				<X>779</X>
+				<Y>306</Y>
+				<W>223</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>795</X>
+				<Y>272</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>795</X>
+				<Y>314</Y>
+				<W>147</W> 
+				<H>17</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>left</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>DAMAGE</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1017</X>
+				<Y>273</Y>
+				<W>131</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1054</X>
+				<Y>316</Y>
+				<W>60</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>KILL</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1160</X>
+				<Y>306</Y>
+				<W>96</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1194</X>
+				<Y>272</Y>
+				<W>29</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1200</X>
+				<Y>316</Y>
+				<W>20</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>DEATH</DATATYPE>
+			<BOUNDS type="bg">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W> 
+				<H>0</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1283</X>
+				<Y>272</Y>
+				<W>49</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1298</X>
+				<Y>316</Y>
+				<W>20</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+		<FIELD frame="ScoreBoard_Team_kill">
+			<DATATYPE>PING</DATATYPE>
+			<BOUNDS type="bg">
+				<X>1355</X>
+				<Y>306</Y>
+				<W>98</W> 
+				<H>33</H>
+			</BOUNDS>
+			<BOUNDS type="title">
+				<X>1388</X>
+				<Y>272</Y>
+				<W>31</W> 
+				<H>20</H>
+			</BOUNDS>
+			<BOUNDS type="content">
+				<X>1385</X>
+				<Y>316</Y>
+				<W>40</W> 
+				<H>14</H>
+			</BOUNDS>
+			<ALIGN>
+				<HALIGN>center</HALIGN>
+				<VALIGN>center</VALIGN>
+			</ALIGN>
+		</FIELD>
+	</ZGScoreBoardViewer>
+
+
+	
+<!-- ///////////////////////// Parse XML //////////////////////////-->
+	<INCLUDE>CombatInterface_DuelTournament.xml</INCLUDE>
+	<INCLUDE>CombatInterface_Spy.xml</INCLUDE>
+</XML>
