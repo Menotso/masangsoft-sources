@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Stage 화면 구성
+   
+   Last Update : 5.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+<!-- 프레임 생성 : StageSettingFrame -->
+	<FRAME item="StageGameInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>	
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<PICTURE item="RoomSetting_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>153</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<!-- Picture : 방 제목 및 비밀번호 설정 -->
+	<PICTURE item="RoomTitle_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>162</Y>
+			<W>1093</W>
+			<H>106</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<ZEDIT item="StageName" parent="StageGameInfo">		
+		<BOUNDS>
+			<X>693</X>
+			<Y>167</Y>
+			<W>811</W>
+			<H>46</H>
+		</BOUNDS>		
+		<COLOR type="frame">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<A>255</A>
+		</COLOR>	
+		<BITMAP type="frame">InvenSort.png</BITMAP>
+		<MAXLENGTH>32</MAXLENGTH>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>10</W>
+		</TABRECT>
+		<TEXT></TEXT>
+	</ZEDIT>
+	<ZEDIT item="StagePassword" parent="StageGameInfo">		
+		<BOUNDS>
+			<X>693</X>
+			<Y>217</Y>
+			<W>811</W>
+			<H>46</H>
+		</BOUNDS>
+		<COLOR type="frame">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<A>255</A>
+		</COLOR>
+		<BITMAP type="frame">InvenSort.png</BITMAP>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>10</W>
+		</TABRECT>
+		<GUIDETEXT></GUIDETEXT>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</ZEDIT>
+	
+	<!-- Picture : 모드 설정 -->
+	<PICTURE item="RoomMode_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>288</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+		
+	<!-- Picture : 맵 설정 -->
+	<PICTURE item="RoomMap_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>988</X>
+			<Y>288</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+		
+	<!-- Picture : 인원 설정 -->
+	<PICTURE item="RoomPlayer_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>349</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+		
+	<!-- Picture : 킬 수 설정 -->
+	<PICTURE item="RoomKill_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>988</X>
+			<Y>349</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Picture : 무기 제한 -->
+	<PICTURE item="RoomWeaponLimit_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>420</Y>
+			<W>1093</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>34</R>
+			<G>38</G>
+			<B>42</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Picture : 기타 옵션 -->
+	<PICTURE item="RoomOtherOption_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>595</Y>
+			<W>1093</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>34</R>
+			<G>38</G>
+			<B>42</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<LABEL item="RoomCreateLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>914</X>
+			<Y>64</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_PSJF_05</TEXT>
+	</LABEL>
+	
+	<LABEL item="RoomOptionLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>914</X>
+			<Y>64</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_PSJF_04</TEXT>
+	</LABEL>
+	
+	
+	<!-- ZEDIT : 게임 제목 텍스트 입력 창 -->
+	<!-- LABEL : 게임 제목 -->
+	<LABEL item="RoomTitleLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>181</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_PSJF_02</TEXT> <!-- 게임 제목 -->
+	</LABEL>
+		
+	<!-- ZEDIT : 비밀번호 텍스트 입력 창 -->
+	<!-- LABEL : 비밀번호 -->
+	<LABEL item="RoomTitleLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>229</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_PSJF_03</TEXT> <!-- 비밀번호 -->
+	</LABEL>
+		
+	<!-- Label : 게임 방식 -->
+	<LABEL item="GameTypeLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>304</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_STAGE_13</TEXT> <!-- 게임 방식 -->
+	</LABEL>
+	
+	<!-- COMBOBOX : 게임 방식 콤보박스 -->
+	<COMBOBOX item="StageType" parent="StageGameInfo">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>573</X>
+			<Y>293</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>419</DROPSIZE>
+	</COMBOBOX>
+		
+	<!-- Label : 맵 선택 -->
+	<LABEL item="GameMapLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>			
+			<X>1010</X>
+			<Y>304</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_STAGE_14</TEXT> <!-- 맵 선택 -->
+	</LABEL>
+
+	<!-- COMBOBOX : 맵 선택 콤보 -->
+	<COMBOBOX item="MapSelection" parent="StageGameInfo">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>1145</X>
+			<Y>293</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>419</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- Label : 최대 인원 -->
+	<LABEL item="MaxPlayerLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>365</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT></TEXT> <!-- 최대 인원 -->
+	</LABEL>	
+	
+	
+	<!-- COMBOBOX : 최대 인원 콤보박스 -->
+	<COMBOBOX item="StageMaxPlayer" parent="StageGameInfo">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>573</X>
+			<Y>354</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>182</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- Label : 라운드 -->
+	<LABEL item="StageRoundCountLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1010</X>
+			<Y>365</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_STAGE_16</TEXT> <!-- 라운드 -->
+	</LABEL>
+	
+	<!-- COMBOBOX : 라운드 콤보박스 -->
+	<COMBOBOX item="StageRoundCount" parent="StageGameInfo">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>1145</X>
+			<Y>354</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>266</DROPSIZE>
+	</COMBOBOX>	
+			
+	<!-- 기타 옵션 -->
+	<LABEL item="StageOtherOptionLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>917</X>
+			<Y>420</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_10</TEXT> <!-- 기타 옵션 -->
+	</LABEL>
+	
+	<!-- 제한 시간 설정 -->
+	<PICTURE item="RoomTimeLimit_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>471</Y>
+			<W>1093</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomTimeLimitLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>438</X>
+			<Y>471</Y>
+			<W>100</W>
+			<H>52</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_02</TEXT> <!-- 제한 시간 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomTimeLimitButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>476</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_STAGEOPTION_01</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_02</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_03</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_04</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_05</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_06</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>
+	
+	<!-- 난입 설정 -->
+	<PICTURE item="RoomForcedEntryToGame_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>522</Y>
+			<W>546</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomForcedEntryToGameLabel" parent="StageGameInfo">
+		<BOUNDS>
+			<X>438</X>
+			<Y>522</Y>
+			<W>100</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_03</TEXT> <!-- 난입 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomForcedEntryToGameButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>593</X>
+			<Y>526</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>
+	
+	<!-- 팀킬 설정 -->
+	<PICTURE item="RoomTeamKill_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>962</X>
+			<Y>522</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomTeamKillLabel" parent="StageGameInfo">
+		<BOUNDS>
+			<X>980</X>
+			<Y>522</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_04</TEXT> <!-- 팀킬 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomTeamKillButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>526</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>
+	
+	<!-- 팀 밸런스 설정 -->
+	<PICTURE item="RoomTeamBalance_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>573</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomTeamBalanceLabel" parent="StageGameInfo">
+		<BOUNDS>
+			<X>438</X>
+			<Y>573</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_08</TEXT> <!-- 팀 밸런스 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomTeamBalanceButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>593</X>
+			<Y>577</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>	
+	
+	<!-- 관전 허용 설정 -->
+	<PICTURE item="RoomWatchGame_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>962</X>
+			<Y>573</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomWatchGameLabel" parent="StageGameInfo">
+		<BOUNDS>
+			<X>980</X>
+			<Y>573</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_06</TEXT> <!-- 관전 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomWatchGameButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>577</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>
+	
+	<!-- 투표 가능 설정 -->
+	<PICTURE item="RoomVote_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>416</X>
+			<Y>624</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomVoteLabel" parent="StageGameInfo">
+		<BOUNDS>
+			<X>438</X>
+			<Y>624</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_07</TEXT> <!-- 투표 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomVoteButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>593</X>
+			<Y>628</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>	
+	
+	<!-- 핫키 설정 -->
+	<PICTURE item="RoomHotKey_BG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>962</X>
+			<Y>624</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomVoteLabel" parent="StageGameInfo">
+		<BOUNDS>
+			<X>980</X>
+			<Y>624</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_09</TEXT> <!-- 핫키 사용 -->
+	</LABEL>
+	<STEPSELECTOR item="RoomHotKeyButton" parent="StageGameInfo">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>628</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16b</FONT>
+		<DARKISHTONE/>
+	</STEPSELECTOR>
+	
+	<ICONBUTTON item="StageCreateBtn" parent="StageGameInfo">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>965</X>
+			<Y>928</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">EquipButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">EquipButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>174</B>
+			</OVER>
+			<DOWN>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_CI_14</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>60</H>
+		</TEXTRECT>
+	</ICONBUTTON>
+	
+	<ICONBUTTON item="StageSettingApplyBtn" parent="StageGameInfo">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>965</X>
+			<Y>928</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">EquipButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">EquipButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>174</B>
+			</OVER>
+			<DOWN>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_CI_14</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>60</H>
+		</TEXTRECT>
+	</ICONBUTTON>
+
+	<ICONBUTTON item="StageSettingCancelBtn" parent="StageGameInfo">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>1255</X>
+			<Y>928</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">DeleteButton_On.png</BITMAP>
+		<BITMAP type="bg" state="over">DeleteButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">DeleteButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>99</R>
+				<G>115</G>
+				<B>135</B>
+			</BASE>
+			<OVER>
+				<R>125</R>
+				<G>144</G>
+				<B>168</B>
+			</OVER>
+			<DOWN>
+				<R>61</R>
+				<G>71</G>
+				<B>83</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_05</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>60</H>
+		</TEXTRECT>
+	</ICONBUTTON>
+</XML>
