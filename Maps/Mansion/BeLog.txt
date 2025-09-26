@@ -1,0 +1,99 @@
+Starting BSP Export...
+object pass_floor_2F : pass_floor_2F: 76 ver / 39 face 
+object pass_A_parapet_3F : pass_A_parapet_3F: 32 ver / 19 face 
+object pass_A_parapet_2F : pass_A_parapet_2F: 232 ver / 171 face 
+object pass_floor_3F : pass_floor_3F: 62 ver / 33 face 
+object pass_A_stair 02 : pass_A_stair 02: 383 ver / 332 face 
+object pass_A_stair 01 : pass_A_stair 01: 320 ver / 131 face 
+object pass_A_picture 01 : pass_A_picture 01: 36 ver / 9 face 
+object pass_A_debris 02 : pass_A_debris 02: 30 ver / 18 face 
+object pass_A_statue_b 01 : pass_A_statue_b 01: 32 ver / 25 face 
+object pass_curtain_b 01 : pass_curtain_b 01: 32 ver / 24 face 
+object pass_A_wall_2F : pass_A_wall_2F: 3180 ver / 1912 face 
+object pass_A_debris_a 01 : pass_A_debris_a 01: 144 ver / 89 face 
+object pass_A_picture 02 : pass_A_picture 02: 36 ver / 9 face 
+object pass_A_picture 03 : pass_A_picture 03: 8 ver / 2 face 
+object pass_A_post 01 : pass_A_post 01: 1452 ver / 1429 face 
+object pass_A_stair_light 01 : pass_A_stair_light 01: 218 ver / 218 face 
+object pass_A_chandelier 01 : pass_A_chandelier 01: 684 ver / 569 face 
+object pass_A_post 02 : pass_A_post 02: 2368 ver / 2240 face 
+object pass_D_table 01 : pass_D_table 01: 0 ver / 0 face 
+object pass_D_table 01 : pass_D_table 01: 437 ver / 358 face 
+object pass_D_door 02 : pass_D_door 02: 16 ver / 10 face 
+object pass_A_chandelier 02 : pass_A_chandelier 02: 684 ver / 569 face 
+object pass_C_table-light01 : pass_C_table-light01: 468 ver / 388 face 
+object pass_B_stair-room door 01 : pass_B_stair-room door 01: 152 ver / 120 face 
+object pass_C_door 02 : pass_C_door 02: 60 ver / 54 face 
+object pass_C_door 02_1 : pass_C_door 02_1: 8 ver / 3 face 
+object pass_A_light_a 01_1 : pass_A_light_a 01_1: 618 ver / 630 face 
+object pass_B_drum 02 : pass_B_drum 02: 210 ver / 147 face 
+object pass_B_stair 01 : pass_B_stair 01: 132 ver / 44 face 
+object pass_B_wall 02 : pass_B_wall 02: 144 ver / 116 face 
+object pass_B_drum 01 : pass_B_drum 01: 3000 ver / 2328 face 
+object pass_B_stair 02 : pass_B_stair 02: 132 ver / 44 face 
+object pass_D_chair 01 : pass_D_chair 01: 4620 ver / 3910 face 
+object pass_D_furni 01 : pass_D_furni 01: 278 ver / 224 face 
+object pass_C_hearth_a 02 : pass_C_hearth_a 02: 416 ver / 239 face 
+object pass_D_door 01 : pass_D_door 01: 60 ver / 54 face 
+object pass_D_door 01_1 : pass_D_door 01_1: 8 ver / 3 face 
+object pass_D_light_c 01_1 : pass_D_light_c 01_1: 206 ver / 210 face 
+object pass_C_light 01 : pass_C_light 01: 206 ver / 210 face 
+object pass_C_door 01 : pass_C_door 01: 16 ver / 10 face 
+object pass_C_hearth_a 01 : pass_C_hearth_a 01: 272 ver / 150 face 
+object pass_C_firewood : pass_C_firewood: 40 ver / 30 face 
+object pass_C_firewood01 : pass_C_firewood01: 40 ver / 30 face 
+object pass_C_table 01 : pass_C_table 01: 690 ver / 632 face 
+object pass_C_table-cloth : pass_C_table-cloth: 24 ver / 12 face 
+object pass_C_ladder : pass_C_ladder: 80 ver / 42 face 
+object pass_C_bookcase : pass_C_bookcase: 1266 ver / 624 face 
+object pass_C_table-light : pass_C_table-light: 300 ver / 244 face 
+object A_light_add_a 01 : A_light_add_a 01: 8 ver / 4 face 
+object pass_window_E : pass_window_E: 204 ver / 150 face 
+object pass_window_A : pass_window_A: 544 ver / 400 face 
+object pass_window_B : pass_window_B: 272 ver / 200 face 
+object pass_window_C : pass_window_C: 544 ver / 400 face 
+object pass_window_D : pass_window_D: 272 ver / 200 face 
+object pass_window_light : pass_window_light: 118 ver / 50 face 
+object pass_A_light_a_01 : pass_A_light_a_01: 474 ver / 498 face 
+object pass_A_light_b_01 : pass_A_light_b_01: 2212 ver / 2324 face 
+object pass_A_light_c_01 : pass_A_light_c_01: 624 ver / 768 face 
+object pass_D_light_a_02_1 : pass_D_light_a_02_1: 158 ver / 166 face 
+object pass_C_light_a_01 : pass_C_light_a_01: 474 ver / 498 face 
+object pass_ceiling : pass_ceiling: 20 ver / 12 face 
+object pass_statue : pass_statue: 1308 ver / 2102 face 
+object pass_SpiderWeb : pass_SpiderWeb: 93 ver / 31 face 
+object pass_B_light 01 : pass_B_light 01: 392 ver / 288 face 
+object hide_wall : hide_wall: 2719 ver / 3220 face 
+RSBsp Info : 29440 faces
+Scene Dimension ( 12399.9 5714.2 2555.9 )
+Export Objects.
+Export Objects : Mansion_obj_txa_fire_a_01.elu 
+Export Objects : Mansion_ani_A_light_add_b 01.elu 
+Export Objects : Mansion_ani_A_light_add_b 02.elu 
+Export Objects : Mansion_obj_txa_fire_a_02.elu 
+Export Objects : Mansion_obj_flag_curtain_b 03.elu 
+Export Objects : Mansion_obj_flag_curtain_b 004.elu 
+Export Objects : Mansion_obj_flag_curtain_b 005.elu 
+Export Objects : Mansion_obj_flag_curtain_b 006.elu 
+Export description.. 
+Saving Source Data.
+CSG union - 1 objects
+construct object subtree hide_wall ( 3547 source polygon ) : total 4957 faces splitted 2468 leaf nodes 7937 nodes 14060 polygons
+0 faces eliminated. (solid)
+3547 source polygons remain
+optimized 3409 polygons remain
+Generating Convex polygons...
+Optimize Polygon 29440 -> 28474 
+Constructing Collision BspTree. ( 3409 source polygons )
+Collision Bsp Info : total 25469 faces splitted 2433 leaf nodes 31561 nodes 46184 polygons
+Constructing OcTree. ( 28474 source polygons )
+Octree Info : total 879 faces splitted 19 leaf nodes 50 nodes 29353 polygons
+Constructing BspTree. ( 28474 source polygons )
+RSBsp Info : total 66645 faces splitted 46337 leaf nodes 92673 nodes 95119 polygons
+Constructing Bsp Bounding Volumes.
+Saving Bsp information.
+C:\Users\jwwoo\Desktop\Mansion\Mansion.RS file saved
+C:\Users\jwwoo\Desktop\Mansion\Mansion.RS.bsp file saved
+C:\Users\jwwoo\Desktop\Mansion\Mansion.RS.col file saved
+Exporting takes 4 minutes and     57 seconds.
+Done.
