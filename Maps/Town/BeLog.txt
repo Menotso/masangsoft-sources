@@ -1,0 +1,106 @@
+Starting BSP Export...
+object pass_build_floor : pass_build_floor: 618 ver / 680 face 
+object pass_prop_a01 : pass_prop_a01: 4578 ver / 6824 face 
+object pass_prop_car : pass_prop_car: 2523 ver / 3986 face 
+object hide_wall : hide_wall: 1293 ver / 2685 face 
+object pass_prop_wire : pass_prop_wire: 384 ver / 128 face 
+object pass_prop_alpha02 : pass_prop_alpha02: 8088 ver / 5898 face 
+object pass_prop_alpha01 : pass_prop_alpha01: 112 ver / 42 face 
+object pass_build_64 : pass_build_64: 113 ver / 151 face 
+object pass_build_63 : pass_build_63: 101 ver / 196 face 
+object pass_build_61 : pass_build_61: 74 ver / 102 face 
+object pass_build_62 : pass_build_62: 53 ver / 51 face 
+object pass_build_60 : pass_build_60: 40 ver / 32 face 
+object pass_build_59 : pass_build_59: 9 ver / 8 face 
+object pass_build_58 : pass_build_58: 16 ver / 18 face 
+object pass_build_57 : pass_build_57: 26 ver / 31 face 
+object pass_build_56 : pass_build_56: 18 ver / 22 face 
+object pass_build_55 : pass_build_55: 21 ver / 29 face 
+object pass_build_54 : pass_build_54: 22 ver / 30 face 
+object pass_build_53 : pass_build_53: 57 ver / 86 face 
+object pass_build_52 : pass_build_52: 95 ver / 107 face 
+object pass_build_51 : pass_build_51: 28 ver / 46 face 
+object pass_build_50 : pass_build_50: 26 ver / 42 face 
+object pass_build_49 : pass_build_49: 20 ver / 34 face 
+object pass_build_48 : pass_build_48: 57 ver / 60 face 
+object pass_build_47 : pass_build_47: 56 ver / 66 face 
+object pass_build_46 : pass_build_46: 40 ver / 55 face 
+object pass_build_45 : pass_build_45: 88 ver / 132 face 
+object pass_build_44 : pass_build_44: 62 ver / 72 face 
+object pass_build_43 : pass_build_43: 14 ver / 12 face 
+object pass_build_42 : pass_build_42: 67 ver / 116 face 
+object pass_build_41 : pass_build_41: 65 ver / 81 face 
+object pass_build_40 : pass_build_40: 55 ver / 64 face 
+object pass_build_39 : pass_build_39: 45 ver / 56 face 
+object pass_build_38 : pass_build_38: 19 ver / 17 face 
+object pass_build_37 : pass_build_37: 64 ver / 73 face 
+object pass_build_36 : pass_build_36: 57 ver / 64 face 
+object pass_build_35 : pass_build_35: 15 ver / 14 face 
+object pass_build_34 : pass_build_34: 17 ver / 23 face 
+object pass_build_33 : pass_build_33: 152 ver / 187 face 
+object pass_build_32 : pass_build_32: 68 ver / 76 face 
+object pass_build_31 : pass_build_31: 34 ver / 32 face 
+object pass_build_30 : pass_build_30: 33 ver / 41 face 
+object pass_build_29 : pass_build_29: 54 ver / 58 face 
+object pass_build_28 : pass_build_28: 16 ver / 18 face 
+object pass_build_27 : pass_build_27: 90 ver / 136 face 
+object pass_build_26 : pass_build_26: 10 ver / 8 face 
+object pass_build_25 : pass_build_25: 124 ver / 190 face 
+object pass_build_24 : pass_build_24: 61 ver / 110 face 
+object pass_build_23 : pass_build_23: 24 ver / 32 face 
+object pass_build_22 : pass_build_22: 404 ver / 572 face 
+object pass_build_21 : pass_build_21: 154 ver / 204 face 
+object pass_build_20 : pass_build_20: 80 ver / 92 face 
+object pass_build_19 : pass_build_19: 95 ver / 120 face 
+object pass_build_18 : pass_build_18: 46 ver / 54 face 
+object pass_build_17 : pass_build_17: 68 ver / 82 face 
+object pass_build_16 : pass_build_16: 37 ver / 47 face 
+object pass_build_15 : pass_build_15: 118 ver / 166 face 
+object pass_build_14 : pass_build_14: 66 ver / 78 face 
+object pass_build_13 : pass_build_13: 110 ver / 148 face 
+object pass_build_12 : pass_build_12: 175 ver / 221 face 
+object pass_build_11 : pass_build_11: 17 ver / 19 face 
+object pass_build_10 : pass_build_10: 58 ver / 67 face 
+object pass_build_09 : pass_build_09: 166 ver / 269 face 
+object pass_build_08 : pass_build_08: 12 ver / 14 face 
+object pass_build_07 : pass_build_07: 59 ver / 58 face 
+object pass_build_06 : pass_build_06: 122 ver / 160 face 
+object pass_build_05 : pass_build_05: 38 ver / 44 face 
+object pass_build_04 : pass_build_04: 45 ver / 58 face 
+object pass_build_03 : pass_build_03: 28 ver / 32 face 
+object pass_build_02 : pass_build_02: 38 ver / 32 face 
+object pass_build_01 : pass_build_01: 37 ver / 51 face 
+object pass_prop_a02 : pass_prop_a02: 2968 ver / 4401 face 
+RSBsp Info : 27341 faces
+Scene Dimension ( 19772.0 16203.6 2700.5 )
+Export Objects.
+Export Objects : Town_obj_sky_daylight.elu 
+Export Objects : Town_obj_flag_b 03.elu 
+Export Objects : Town_obj_flag_b 02.elu 
+Export Objects : Town_obj_flag_b 01.elu 
+Export Objects : Town_obj_flag_a 04.elu 
+Export Objects : Town_obj_flag_a 03.elu 
+Export Objects : Town_obj_flag_a 02.elu 
+Export Objects : Town_obj_flag_a 01.elu 
+Export description.. 
+Saving Source Data.
+CSG union - 1 objects
+construct object subtree hide_wall ( 2685 source polygon ) : total 2625 faces splitted 702 leaf nodes 2672 nodes 7246 polygons
+0 faces eliminated. (solid)
+2685 source polygons remain
+optimized 1958 polygons remain
+Generating Convex polygons...
+Optimize Polygon 27341 -> 19007 
+Constructing Collision BspTree. ( 1958 source polygons )
+Collision Bsp Info : total 9039 faces splitted 707 leaf nodes 10679 nodes 18722 polygons
+Constructing OcTree. ( 19007 source polygons )
+Octree Info : total 2697 faces splitted 106 leaf nodes 214 nodes 21704 polygons
+Constructing BspTree. ( 19007 source polygons )
+RSBsp Info : total 69261 faces splitted 37441 leaf nodes 74881 nodes 88268 polygons
+Constructing Bsp Bounding Volumes.
+Saving Bsp information.
+C:\Users\jwwoo\Desktop\Town\Town.RS file saved
+C:\Users\jwwoo\Desktop\Town\Town.RS.bsp file saved
+C:\Users\jwwoo\Desktop\Town\Town.RS.col file saved
+Exporting takes 2 minutes and     46 seconds.
+Done.
