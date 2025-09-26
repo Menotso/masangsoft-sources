@@ -1,0 +1,1443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <MISSION id="1" sortnum="1" activate="1" name="PVP Kill Mission" description="Kill 5 players using Daggers in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="dagger" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="2" sortnum="2" activate="1" name="PVP Kill Mission" description="Kill 5 players using Katanas in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="katana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="3" sortnum="3" activate="1" name="PVP Kill Mission" description="Kill 5 players using Dual Blades in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="doublekatana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="4" sortnum="4" activate="1" name="PVP Kill Mission" description="Kill 20 players using Pistols in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="pistol" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="5" sortnum="5" activate="1" name="PVP Kill Mission" description="Kill 20 players using Revolvers in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="revolver" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="6" sortnum="6" activate="1" name="PVP Kill Mission" description="Kill 20 players using SMGs in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="smg" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="7" sortnum="7" activate="1" name="PVP Kill Mission" description="Kill 20 players using Shotguns in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="shotgun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="8" sortnum="8" activate="1" name="PVP Kill Mission" description="Kill 20 players using Rifles in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rifle" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="9" sortnum="9" activate="1" name="PVP Kill Mission" description="Kill 20 players using Machine Guns in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="machinegun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="10" sortnum="10" activate="1" name="PVP Kill Mission" description="Kill 3 players using Launchers in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rocket" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="11" sortnum="11" activate="1" name="PVP Kill Mission" description="Kill 3 players using Grenade in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="frag" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="12" sortnum="12" activate="1" name="PVP Kill Mission" description="Kill 5 players using Melee only in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="melee" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="13" sortnum="13" activate="1" name="Elimination Kill Mission" description="Kill 5 players using Daggers in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="dagger" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="14" sortnum="14" activate="1" name="Elimination Kill Mission" description="Kill 5 players using Katanas in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="katana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="15" sortnum="15" activate="1" name="Elimination Kill Mission" description="Kill 5 players using Dual Blades in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="doublekatana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="16" sortnum="16" activate="1" name="Elimination Kill Mission" description="Kill 20 players using Pistols in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="pistol" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="17" sortnum="17" activate="1" name="Elimination Kill Mission" description="Kill 20 players using Revolvers in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="revolver" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="18" sortnum="18" activate="1" name="Elimination Kill Mission" description="Kill 20 players using SMGs in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="smg" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="19" sortnum="19" activate="1" name="Elimination Kill Mission" description="Kill 20 players using Shotguns in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="shotgun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="20" sortnum="20" activate="1" name="Elimination Kill Mission" description="Kill 20 players using Rifles in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rifle" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="21" sortnum="21" activate="1" name="Elimination Kill Mission" description="Kill 20 players using Machine Guns in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="machinegun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="22" sortnum="22" activate="1" name="Elimination Kill Mission" description="Kill 3 players using Launchers in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rocket" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="23" sortnum="23" activate="1" name="Elimination Kill Mission" description="Kill 3 players using Grenade in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="frag" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="24" sortnum="24" activate="1" name="Elimination Kill Mission" description="Kill 5 players using Melee only in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="melee" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="25" sortnum="25" activate="1" name="Deathmatch Kill Mission" description="Kill 5 players using Daggers in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="dagger" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="26" sortnum="26" activate="1" name="Deathmatch Kill Mission" description="Kill 5 players using Katanas in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="katana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="27" sortnum="27" activate="1" name="Deathmatch Kill Mission" description="Kill 5 players using Dual Blades in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="doublekatana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="28" sortnum="28" activate="1" name="Deathmatch Kill Mission" description="Kill 20 players using Pistols in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="pistol" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="29" sortnum="29" activate="1" name="Deathmatch Kill Mission" description="Kill 20 players using Revolvers in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="revolver" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="30" sortnum="30" activate="1" name="Deathmatch Kill Mission" description="Kill 20 players using SMGs in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="smg" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="31" sortnum="31" activate="1" name="Deathmatch Kill Mission" description="Kill 20 players using Shotguns in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="shotgun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="32" sortnum="32" activate="1" name="Deathmatch Kill Mission" description="Kill 20 players using Rifles in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rifle" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="33" sortnum="33" activate="1" name="Deathmatch Kill Mission" description="Kill 20 players using Machine Guns in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="machinegun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="34" sortnum="34" activate="1" name="Deathmatch Kill Mission" description="Kill 3 players using Launchers in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rocket" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="35" sortnum="35" activate="1" name="Deathmatch Kill Mission" description="Kill 3 players using Grenade in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="frag" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="36" sortnum="36" activate="1" name="Deathmatch Kill Mission" description="Kill 5 players using Melee only in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="melee" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="37" sortnum="37" activate="1" name="Team Deathmatch Kill Mission" description="Kill 5 players using Daggers in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="dagger" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="38" sortnum="38" activate="1" name="Team Deathmatch Kill Mission" description="Kill 5 players using Katanas in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="katana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="39" sortnum="39" activate="1" name="Team Deathmatch Kill Mission" description="Kill 5 players using Dual Blades in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="doublekatana" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="40" sortnum="40" activate="1" name="Team Deathmatch Kill Mission" description="Kill 20 players using Pistols in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="pistol" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="41" sortnum="41" activate="1" name="Team Deathmatch Kill Mission" description="Kill 20 players using Revolvers in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="revolver" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="42" sortnum="42" activate="1" name="Team Deathmatch Kill Mission" description="Kill 20 players using SMGs in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="smg" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="43" sortnum="43" activate="1" name="Team Deathmatch Kill Mission" description="Kill 20 players using Shotguns in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="shotgun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="44" sortnum="44" activate="1" name="Team Deathmatch Kill Mission" description="Kill 20 players using Rifles in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rifle" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="45" sortnum="45" activate="1" name="Team Deathmatch Kill Mission" description="Kill 20 players using Machine Guns in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="machinegun" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="46" sortnum="46" activate="1" name="Team Deathmatch Kill Mission" description="Kill 3 players using Launchers in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rocket" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="47" sortnum="47" activate="1" name="Team Deathmatch Kill Mission" description="Kill 3 players using Grenade in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="frag" accumulate="true" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="48" sortnum="48" activate="1" name="Team Deathmatch Kill Mission" description="Kill 5 players using Melee only in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="melee" accumulate="true" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="49" sortnum="49" activate="1" name="PVP Kill Mission" description="Kill 2 players using Daggers in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="dagger" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="50" sortnum="50" activate="1" name="PVP Kill Mission" description="Kill 2 players using Katanas in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="katana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="51" sortnum="51" activate="1" name="PVP Kill Mission" description="Kill 2 players using Dual Blades in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="52" sortnum="52" activate="1" name="PVP Kill Mission" description="Kill 10 players using Pistols in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="pistol" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="53" sortnum="53" activate="1" name="PVP Kill Mission" description="Kill 10 players using Revolvers in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="revolver" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="54" sortnum="54" activate="1" name="PVP Kill Mission" description="Kill 10 players using SMGs in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="smg" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="55" sortnum="55" activate="1" name="PVP Kill Mission" description="Kill 10 players using Shotguns in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="56" sortnum="56" activate="1" name="PVP Kill Mission" description="Kill 10 players using Rifles in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rifle" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="57" sortnum="57" activate="1" name="PVP Kill Mission" description="Kill 10 players using Machine Guns in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="58" sortnum="58" activate="1" name="PVP Kill Mission" description="Kill 3 players using Launchers in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rocket" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="59" sortnum="59" activate="1" name="PVP Kill Mission" description="Kill 3 players using Grenade in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="frag" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="60" sortnum="60" activate="1" name="PVP Kill Mission" description="Kill 2 players using Melee only in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="melee" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="61" sortnum="61" activate="1" name="Elimination Kill Mission" description="Kill 2 players using Daggers in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="dagger" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="62" sortnum="62" activate="1" name="Elimination Kill Mission" description="Kill 2 players using Katanas in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="katana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="63" sortnum="63" activate="1" name="Elimination Kill Mission" description="Kill 2 players using Dual Blades in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="64" sortnum="64" activate="1" name="Elimination Kill Mission" description="Kill 10 players using Pistols in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="pistol" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="65" sortnum="65" activate="1" name="Elimination Kill Mission" description="Kill 10 players using Revolvers in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="revolver" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="66" sortnum="66" activate="1" name="Elimination Kill Mission" description="Kill 10 players using SMGs in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="smg" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="67" sortnum="67" activate="1" name="Elimination Kill Mission" description="Kill 10 players using Shotguns in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="68" sortnum="68" activate="1" name="Elimination Kill Mission" description="Kill 10 players using Rifles in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rifle" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="69" sortnum="69" activate="1" name="Elimination Kill Mission" description="Kill 10 players using Machine Guns in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="70" sortnum="70" activate="1" name="Elimination Kill Mission" description="Kill 3 players using Launchers in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rocket" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="71" sortnum="71" activate="1" name="Elimination Kill Mission" description="Kill 3 players using Grenade in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="frag" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="72" sortnum="72" activate="1" name="Elimination Kill Mission" description="Kill 2 players using Melee only in in single Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="melee" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="73" sortnum="73" activate="1" name="Deathmatch Kill Mission" description="Kill 2 players using Daggers in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="dagger" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="74" sortnum="74" activate="1" name="Deathmatch Kill Mission" description="Kill 2 players using Katanas in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="katana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="75" sortnum="75" activate="1" name="Deathmatch Kill Mission" description="Kill 2 players using Dual Blades in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="76" sortnum="76" activate="1" name="Deathmatch Kill Mission" description="Kill 10 players using Pistols in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="pistol" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="77" sortnum="77" activate="1" name="Deathmatch Kill Mission" description="Kill 10 players using Revolvers in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="revolver" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="78" sortnum="78" activate="1" name="Deathmatch Kill Mission" description="Kill 10 players using SMGs in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="smg" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="79" sortnum="79" activate="1" name="Deathmatch Kill Mission" description="Kill 10 players using Shotguns in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="80" sortnum="80" activate="1" name="Deathmatch Kill Mission" description="Kill 10 players using Rifles in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rifle" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="81" sortnum="81" activate="1" name="Deathmatch Kill Mission" description="Kill 10 players using Machine Guns in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="82" sortnum="82" activate="1" name="Deathmatch Kill Mission" description="Kill 3 players using Launchers in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rocket" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="83" sortnum="83" activate="1" name="Deathmatch Kill Mission" description="Kill 3 players using Grenade in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="frag" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="84" sortnum="84" activate="1" name="Deathmatch Kill Mission" description="Kill 2 players using Melee only in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="melee" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="85" sortnum="85" activate="1" name="Team Deathmatch Kill Mission" description="Kill 2 players using Daggers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="dagger" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="86" sortnum="86" activate="1" name="Team Deathmatch Kill Mission" description="Kill 2 players using Katanas in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="katana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="87" sortnum="87" activate="1" name="Team Deathmatch Kill Mission" description="Kill 2 players using Dual Blades in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="88" sortnum="88" activate="1" name="Team Deathmatch Kill Mission" description="Kill 10 players using Pistols in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="pistol" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="89" sortnum="89" activate="1" name="Team Deathmatch Kill Mission" description="Kill 10 players using Revolvers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="revolver" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="90" sortnum="90" activate="1" name="Team Deathmatch Kill Mission" description="Kill 10 players using SMGs in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="smg" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="91" sortnum="91" activate="1" name="Team Deathmatch Kill Mission" description="Kill 10 players using Shotguns in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="92" sortnum="92" activate="1" name="Team Deathmatch Kill Mission" description="Kill 10 players using Rifles in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rifle" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="93" sortnum="93" activate="1" name="Team Deathmatch Kill Mission" description="Kill 10 players using Machine Guns in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="94" sortnum="94" activate="1" name="Team Deathmatch Kill Mission" description="Kill 3 players using Launchers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rocket" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="95" sortnum="95" activate="1" name="Team Deathmatch Kill Mission" description="Kill 3 players using Grenade in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="frag" accumulate="false" objective="kill" objective_count="3">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="96" sortnum="96" activate="1" name="Team Deathmatch Kill Mission" description="Kill 2 players using Melee only in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="melee" accumulate="false" objective="kill" objective_count="2">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="97" sortnum="97" activate="1" name="PVP Damage Mission" description="Kill 500 players using Daggers in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="dagger" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="98" sortnum="98" activate="1" name="PVP Damage Mission" description="Kill 500 players using Katanas in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="katana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="99" sortnum="99" activate="1" name="PVP Damage Mission" description="Kill 500 players using Dual Blades in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="doublekatana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="100" sortnum="100" activate="1" name="PVP Damage Mission" description="Kill 1,000 players using Pistols in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="pistol" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="101" sortnum="101" activate="1" name="PVP Damage Mission" description="Kill 1,000 players using Revolvers in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="revolver" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="102" sortnum="102" activate="1" name="PVP Damage Mission" description="Kill 2,000 players using SMGs in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="smg" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="103" sortnum="103" activate="1" name="PVP Damage Mission" description="Kill 1200 players using Shotguns in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="shotgun" accumulate="true" objective="damage" objective_count="1200">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="104" sortnum="104" activate="1" name="PVP Damage Mission" description="Kill 2,000 players using Rifles in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rifle" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="105" sortnum="105" activate="1" name="PVP Damage Mission" description="Kill 2,000 players using Machine Guns in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="machinegun" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="106" sortnum="106" activate="1" name="PVP Damage Mission" description="Kill 800 players using Launchers in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rocket" accumulate="true" objective="damage" objective_count="800">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="107" sortnum="107" activate="1" name="PVP Damage Mission" description="Kill 500 players using Grenade in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="frag" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="108" sortnum="108" activate="1" name="PVP Damage Mission" description="Kill 500 players using Melee only in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="melee" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="109" sortnum="109" activate="1" name="Team Deathmatch Damage Mission" description="Kill 500 players using Daggers in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="dagger" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="110" sortnum="110" activate="1" name="Team Deathmatch Damage Mission" description="Kill 500 players using Katanas in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="katana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="111" sortnum="111" activate="1" name="Team Deathmatch Damage Mission" description="Kill 500 players using Dual Blades in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="doublekatana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="112" sortnum="112" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1,000 players using Pistols in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="pistol" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="113" sortnum="113" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1,000 players using Revolvers in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="revolver" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="114" sortnum="114" activate="1" name="Team Deathmatch Damage Mission" description="Kill 2,000 players using SMGs in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="smg" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="115" sortnum="115" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1200 players using Shotguns in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="shotgun" accumulate="true" objective="damage" objective_count="1200">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="116" sortnum="116" activate="1" name="Team Deathmatch Damage Mission" description="Kill 2,000 players using Rifles in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rifle" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="117" sortnum="117" activate="1" name="Team Deathmatch Damage Mission" description="Kill 2,000 players using Machine Guns in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="machinegun" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="118" sortnum="118" activate="1" name="Team Deathmatch Damage Mission" description="Kill 800 players using Launchers in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rocket" accumulate="true" objective="damage" objective_count="800">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="119" sortnum="119" activate="1" name="Team Deathmatch Damage Mission" description="Kill 500 players using Grenade in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="frag" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="120" sortnum="120" activate="1" name="Team Deathmatch Damage Mission" description="Kill 500 players using Melee only in Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="melee" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="121" sortnum="121" activate="1" name="Elimination Damage Mission" description="Kill 500 players using Daggers in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="dagger" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="122" sortnum="122" activate="1" name="Elimination Damage Mission" description="Kill 500 players using Katanas in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="katana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="123" sortnum="123" activate="1" name="Elimination Damage Mission" description="Kill 500 players using Dual Blades in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="doublekatana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="124" sortnum="124" activate="1" name="Elimination Damage Mission" description="Kill 1,000 players using Pistols in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="pistol" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="125" sortnum="125" activate="1" name="Elimination Damage Mission" description="Kill 1,000 players using Revolvers in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="revolver" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="126" sortnum="126" activate="1" name="Elimination Damage Mission" description="Kill 2,000 players using SMGs in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="smg" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="127" sortnum="127" activate="1" name="Elimination Damage Mission" description="Kill 1200 players using Shotguns in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="shotgun" accumulate="true" objective="damage" objective_count="1200">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="128" sortnum="128" activate="1" name="Elimination Damage Mission" description="Kill 2,000 players using Rifles in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rifle" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="129" sortnum="129" activate="1" name="Elimination Damage Mission" description="Kill 2,000 players using Machine Guns in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="machinegun" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="130" sortnum="130" activate="1" name="Elimination Damage Mission" description="Kill 800 players using Launchers in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rocket" accumulate="true" objective="damage" objective_count="800">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="131" sortnum="131" activate="1" name="Elimination Damage Mission" description="Kill 500 players using Grenade in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="frag" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="132" sortnum="132" activate="1" name="Elimination Damage Mission" description="Kill 500 players using Melee only in any Elimination mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="melee" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="133" sortnum="133" activate="1" name="Deathmatch Damage Mission" description="Kill 500 players using Daggers in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="dagger" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="134" sortnum="134" activate="1" name="Deathmatch Damage Mission" description="Kill 500 players using Katanas in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="katana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="135" sortnum="135" activate="1" name="Deathmatch Damage Mission" description="Kill 500 players using Dual Blades in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="doublekatana" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="136" sortnum="136" activate="1" name="Deathmatch Damage Mission" description="Kill 1,000 players using Pistols in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="pistol" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="137" sortnum="137" activate="1" name="Deathmatch Damage Mission" description="Kill 1,000 players using Revolvers in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="revolver" accumulate="true" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="138" sortnum="138" activate="1" name="Deathmatch Damage Mission" description="Kill 2,000 players using SMGs in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="smg" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="139" sortnum="139" activate="1" name="Deathmatch Damage Mission" description="Kill 1200 players using Shotguns in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="shotgun" accumulate="true" objective="damage" objective_count="1200">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="140" sortnum="140" activate="1" name="Deathmatch Damage Mission" description="Kill 2,000 players using Rifles in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rifle" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="141" sortnum="141" activate="1" name="Deathmatch Damage Mission" description="Kill 2,000 players using Machine Guns in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="machinegun" accumulate="true" objective="damage" objective_count="2000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="142" sortnum="142" activate="1" name="Deathmatch Damage Mission" description="Kill 800 players using Launchers in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rocket" accumulate="true" objective="damage" objective_count="800">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="143" sortnum="143" activate="1" name="Deathmatch Damage Mission" description="Kill 500 players using Grenade in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="frag" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="144" sortnum="144" activate="1" name="Deathmatch Damage Mission" description="Kill 500 players using Melee only in Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="melee" accumulate="true" objective="damage" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="145" sortnum="145" activate="1" name="PVP Damage Mission" description="Kill 300 players using Daggers in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="dagger" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="146" sortnum="146" activate="1" name="PVP Damage Mission" description="Kill 300 players using Katanas in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="katana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="147" sortnum="147" activate="1" name="PVP Damage Mission" description="Kill 300 players using Dual Blades in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="doublekatana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="148" sortnum="148" activate="1" name="PVP Damage Mission" description="Kill 700 players using Pistols in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="pistol" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="149" sortnum="149" activate="1" name="PVP Damage Mission" description="Kill 700 players using Revolvers in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="revolver" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="150" sortnum="150" activate="1" name="PVP Damage Mission" description="Kill 1300 players using SMGs in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="smg" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="151" sortnum="151" activate="1" name="PVP Damage Mission" description="Kill 1,000 players using Shotguns in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="shotgun" accumulate="false" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="152" sortnum="152" activate="1" name="PVP Damage Mission" description="Kill 1300 players using Rifles in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rifle" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="153" sortnum="153" activate="1" name="PVP Damage Mission" description="Kill 1300 players using Machine Guns in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="machinegun" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="154" sortnum="154" activate="1" name="PVP Damage Mission" description="Kill 350 players using Launchers in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rocket" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="155" sortnum="155" activate="1" name="PVP Damage Mission" description="Kill 350 players using Grenade in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="frag" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="156" sortnum="156" activate="1" name="PVP Damage Mission" description="Kill 300 players using Melee only in any single PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="melee" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="157" sortnum="157" activate="1" name="Team Deathmatch Damage Mission" description="Kill 300 players using Daggers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="dagger" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="158" sortnum="158" activate="1" name="Team Deathmatch Damage Mission" description="Kill 300 players using Katanas in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="katana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="159" sortnum="159" activate="1" name="Team Deathmatch Damage Mission" description="Kill 300 players using Dual Blades in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="doublekatana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="160" sortnum="160" activate="1" name="Team Deathmatch Damage Mission" description="Kill 700 players using Pistols in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="pistol" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="161" sortnum="161" activate="1" name="Team Deathmatch Damage Mission" description="Kill 700 players using Revolvers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="revolver" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="162" sortnum="162" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1300 players using SMGs in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="smg" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="163" sortnum="163" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1,000 players using Shotguns in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="shotgun" accumulate="false" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="164" sortnum="164" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1300 players using Rifles in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rifle" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="165" sortnum="165" activate="1" name="Team Deathmatch Damage Mission" description="Kill 1300 players using Machine Guns in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="machinegun" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="166" sortnum="166" activate="1" name="Team Deathmatch Damage Mission" description="Kill 350 players using Launchers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="rocket" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="167" sortnum="167" activate="1" name="Team Deathmatch Damage Mission" description="Kill 350 players using Grenade in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="frag" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="168" sortnum="168" activate="1" name="Team Deathmatch Damage Mission" description="Kill 300 players using Melee only in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team2" weapon_type="melee" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="169" sortnum="169" activate="1" name="Elimination Damage Mission" description="Kill 300 players using Daggers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="dagger" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="170" sortnum="170" activate="1" name="Elimination Damage Mission" description="Kill 300 players using Katanas in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="katana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="171" sortnum="171" activate="1" name="Elimination Damage Mission" description="Kill 300 players using Dual Blades in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="doublekatana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="172" sortnum="172" activate="1" name="Elimination Damage Mission" description="Kill 700 players using Pistols in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="pistol" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="173" sortnum="173" activate="1" name="Elimination Damage Mission" description="Kill 700 players using Revolvers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="revolver" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="174" sortnum="174" activate="1" name="Elimination Damage Mission" description="Kill 1300 players using SMGs in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="smg" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="175" sortnum="175" activate="1" name="Elimination Damage Mission" description="Kill 1,000 players using Shotguns in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="shotgun" accumulate="false" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="176" sortnum="176" activate="1" name="Elimination Damage Mission" description="Kill 1300 players using Rifles in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rifle" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="177" sortnum="177" activate="1" name="Elimination Damage Mission" description="Kill 1300 players using Machine Guns in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="machinegun" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="178" sortnum="178" activate="1" name="Elimination Damage Mission" description="Kill 350 players using Launchers in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="rocket" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="179" sortnum="179" activate="1" name="Elimination Damage Mission" description="Kill 350 players using Grenade in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="frag" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="180" sortnum="180" activate="1" name="Elimination Damage Mission" description="Kill 300 players using Melee only in single Team Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_team" weapon_type="melee" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="181" sortnum="181" activate="1" name="Deathmatch Damage Mission" description="Kill 300 players using Daggers in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="dagger" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="182" sortnum="182" activate="1" name="Deathmatch Damage Mission" description="Kill 300 players using Katanas in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="katana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="183" sortnum="183" activate="1" name="Deathmatch Damage Mission" description="Kill 300 players using Dual Blades in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="doublekatana" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="184" sortnum="184" activate="1" name="Deathmatch Damage Mission" description="Kill 700 players using Pistols in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="pistol" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="185" sortnum="185" activate="1" name="Deathmatch Damage Mission" description="Kill 700 players using Revolvers in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="revolver" accumulate="false" objective="damage" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="186" sortnum="186" activate="1" name="Deathmatch Damage Mission" description="Kill 1300 players using SMGs in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="smg" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="187" sortnum="187" activate="1" name="Deathmatch Damage Mission" description="Kill 1,000 players using Shotguns in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="shotgun" accumulate="false" objective="damage" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="188" sortnum="188" activate="1" name="Deathmatch Damage Mission" description="Kill 1300 players using Rifles in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rifle" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="189" sortnum="189" activate="1" name="Deathmatch Damage Mission" description="Kill 1300 players using Machine Guns in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="machinegun" accumulate="false" objective="damage" objective_count="1300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="190" sortnum="190" activate="1" name="Deathmatch Damage Mission" description="Kill 350 players using Launchers in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="rocket" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="191" sortnum="191" activate="1" name="Deathmatch Damage Mission" description="Kill 350 players using Grenade in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="frag" accumulate="false" objective="damage" objective_count="350">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="192" sortnum="192" activate="1" name="Deathmatch Damage Mission" description="Kill 300 players using Melee only in single Deathmatch mode." difficulty="normal" type="daily" game_type="deathmatch_solo" weapon_type="melee" accumulate="false" objective="damage" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="193" sortnum="193" activate="1" name="PVP Ammo Mission" description="Use 300 pistol bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="pistol" accumulate="true" objective="cunsume_ammo" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="194" sortnum="194" activate="1" name="PVP Ammo Mission" description="Use 300 revolver bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="revolver" accumulate="true" objective="cunsume_ammo" objective_count="300">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="195" sortnum="195" activate="1" name="PVP Ammo Mission" description="Use 700 SMG bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="smg" accumulate="true" objective="cunsume_ammo" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="196" sortnum="196" activate="1" name="PVP Ammo Mission" description="Use 100 shotgun bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="shotgun" accumulate="true" objective="cunsume_ammo" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="197" sortnum="197" activate="1" name="PVP Ammo Mission" description="Use 700 rifle bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rifle" accumulate="true" objective="cunsume_ammo" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="198" sortnum="198" activate="1" name="PVP Ammo Mission" description="Use 700 machine gun bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="machinegun" accumulate="true" objective="cunsume_ammo" objective_count="700">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="199" sortnum="199" activate="1" name="PVP Ammo Mission" description="Use 15 launcher bullets in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="rocket" accumulate="true" objective="cunsume_ammo" objective_count="15">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="200" sortnum="200" activate="1" name="(Hard) PVP Kill Mission" description="Kill 10 players using Daggers in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="dagger" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="201" sortnum="201" activate="1" name="(Hard) PVP Kill Mission" description="Kill 10 players using Katanas in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="katana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="202" sortnum="202" activate="1" name="(Hard) PVP Kill Mission" description="Kill 10 players using Dual Blades in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="203" sortnum="203" activate="1" name="(Hard) PVP Kill Mission" description="Kill 20 players using Pistols in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="pistol" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="204" sortnum="204" activate="1" name="(Hard) PVP Kill Mission" description="Kill 20 players using Revolvers in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="revolver" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="205" sortnum="205" activate="1" name="(Hard) PVP Kill Mission" description="Kill 20 players using SMGs in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="smg" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="206" sortnum="206" activate="1" name="(Hard) PVP Kill Mission" description="Kill 20 players using Shotguns in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="207" sortnum="207" activate="1" name="(Hard) PVP Kill Mission" description="Kill 20 players using Rifles in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="rifle" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="208" sortnum="208" activate="1" name="(Hard) PVP Kill Mission" description="Kill 20 players using Machine Guns in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="209" sortnum="209" activate="1" name="(Hard) PVP Kill Mission" description="Kill 5 players using Launchers in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="rocket" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="210" sortnum="210" activate="1" name="(Hard) PVP Kill Mission" description="Kill 5 players using Grenade in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="frag" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="211" sortnum="211" activate="1" name="(Hard) PVP Kill Mission" description="Kill 10 players using Melee only in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="melee" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="212" sortnum="212" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 10 players using Daggers in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="dagger" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="213" sortnum="213" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 10 players using Katanas in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="katana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="214" sortnum="214" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 10 players using Dual Blades in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="215" sortnum="215" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 20 players using Pistols in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="pistol" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="216" sortnum="216" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 20 players using Revolvers in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="revolver" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="217" sortnum="217" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 20 players using SMGs in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="smg" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="218" sortnum="218" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 20 players using Shotguns in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="219" sortnum="219" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 20 players using Rifles in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="rifle" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="220" sortnum="220" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 20 players using Machine Guns in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="221" sortnum="221" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 5 players using Launchers in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="rocket" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="222" sortnum="222" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 5 players using Grenade in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="frag" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="223" sortnum="223" activate="1" name="(Hard) Elimination Kill Mission" description="Kill 10 players using Melee only in single Elimination mode." difficulty="hard" type="daily" game_type="deathmatch_team" weapon_type="melee" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="224" sortnum="224" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 10 players using Daggers in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="dagger" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="225" sortnum="225" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 10 players using Katanas in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="katana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="226" sortnum="226" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 10 players using Dual Blades in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="227" sortnum="227" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 20 players using Pistols in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="pistol" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="228" sortnum="228" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 20 players using Revolvers in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="revolver" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="229" sortnum="229" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 20 players using SMGs in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="smg" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="230" sortnum="230" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 20 players using Shotguns in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="231" sortnum="231" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 20 players using Rifles in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="rifle" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="232" sortnum="232" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 20 players using Machine Guns in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="233" sortnum="233" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 5 players using Launchers in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="rocket" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="234" sortnum="234" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 5 players using Grenade in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="frag" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="235" sortnum="235" activate="1" name="(Hard) Deathmatch Kill Mission" description="Kill 10 players using Melee only in single Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_solo" weapon_type="melee" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="236" sortnum="236" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 10 players using Daggers in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="dagger" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="237" sortnum="237" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 10 players using Katanas in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="katana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="238" sortnum="238" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 10 players using Dual Blades in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="doublekatana" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="239" sortnum="239" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 20 players using Pistols in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="pistol" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="240" sortnum="240" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 20 players using Revolvers in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="revolver" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="241" sortnum="241" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 20 players using SMGs in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="smg" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="242" sortnum="242" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 20 players using Shotguns in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="shotgun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="243" sortnum="243" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 20 players using Rifles in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="rifle" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="244" sortnum="244" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 20 players using Machine Guns in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="machinegun" accumulate="false" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="245" sortnum="245" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 5 players using Launchers in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="rocket" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="246" sortnum="246" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 5 players using Grenade in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="frag" accumulate="false" objective="kill" objective_count="5">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="247" sortnum="247" activate="1" name="(Hard) Team Deathmatch Kill Mission" description="Kill 10 players using Melee only in single Team Deathmatch mode." difficulty="hard" type="daily" game_type="deathmatch_team2" weapon_type="melee" accumulate="false" objective="kill" objective_count="10">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="248" sortnum="248" activate="1" name="PVP Grenade Mission" description="Use 15 grenades in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="frag" accumulate="true" objective="use_item" objective_count="15">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="249" sortnum="249" activate="1" name="PVP HP Mission" description="Heal 1,000 HP in any PVP match." difficulty="normal" type="daily" game_type="pvp" weapon_type="no_matter" accumulate="true" objective="recovery" objective_count="1000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="250" sortnum="250" activate="1" name="(Hard) PVP HP Mission" description="Heal 500 HP in any single PVP match." difficulty="hard" type="daily" game_type="pvp" weapon_type="no_matter" accumulate="false" objective="recovery" objective_count="500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="251" sortnum="251" activate="1" name="Elimination Victory Mission" description="Win 50 rounds in Elimination mode." difficulty="normal" type="weekly" game_type="deathmatch_team" weapon_type="all" accumulate="true" objective="round_win" objective_count="50">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="252" sortnum="252" activate="0" name="Duel Victory Mission" description="Win 50 rounds in Duel mode." difficulty="normal" type="weekly" game_type="duel" weapon_type="all" accumulate="true" objective="round_win" objective_count="50">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="253" sortnum="253" activate="1" name="Elimination Victory Mission" description="Win 15 games in Elimination mode." difficulty="normal" type="weekly" game_type="deathmatch_team" weapon_type="all" accumulate="true" objective="game_win" objective_count="15">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="254" sortnum="254" activate="1" name="Team Deathmatch Victory Mission" description="Win 15 games in Team Deathmatch mode." difficulty="normal" type="weekly" game_type="deathmatch_team2" weapon_type="all" accumulate="true" objective="game_win" objective_count="15">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="255" sortnum="255" activate="0" name="Duel Victory Mission" description="Win 15 games in Duel mode." difficulty="normal" type="weekly" game_type="duel" weapon_type="all" accumulate="true" objective="game_win" objective_count="15">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="256" sortnum="256" activate="1" name="Elimination Kill Mission" description="Kill 30 players in Elimination mode." difficulty="normal" type="weekly" game_type="deathmatch_team" weapon_type="all" accumulate="true" objective="kill" objective_count="30">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="257" sortnum="257" activate="1" name="Deathmatch Kill Mission" description="Kill 30 players in Deathmatch mode." difficulty="normal" type="weekly" game_type="deathmatch_solo" weapon_type="all" accumulate="true" objective="kill" objective_count="30">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="258" sortnum="258" activate="1" name="Team Deathmatch Kill Mission" description="Kill 30 players in Team Deathmatch mode." difficulty="normal" type="weekly" game_type="deathmatch_team2" weapon_type="all" accumulate="true" objective="kill" objective_count="30">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="259" sortnum="259" activate="1" name="Team Deathmatch Damage Mission" description="Deal 6,000 damage to enemy players in Team Deathmatch mode." difficulty="normal" type="weekly" game_type="deathmatch_team2" weapon_type="all" accumulate="true" objective="damage" objective_count="6000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="260" sortnum="260" activate="1" name="Elimination Damage Mission" description="Deal 6,000 damage to enemy players in Elimination mode." difficulty="normal" type="weekly" game_type="deathmatch_team" weapon_type="all" accumulate="true" objective="damage" objective_count="6000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="261" sortnum="261" activate="1" name="Deathmatch Damage Mission" description="Deal 6,000 damage to enemy players in Deathmatch mode." difficulty="normal" type="weekly" game_type="deathmatch_solo" weapon_type="all" accumulate="true" objective="damage" objective_count="6000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="262" sortnum="262" activate="1" name="PVP Damage Mission" description="Deal 3,000 damage to enemy players with Daggers in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="dagger" accumulate="true" objective="damage" objective_count="3000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="263" sortnum="263" activate="1" name="PVP Damage Mission" description="Deal 3,000 damage to enemy players with Katanas in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="katana" accumulate="true" objective="damage" objective_count="3000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="264" sortnum="264" activate="1" name="PVP Damage Mission" description="Deal 3,000 damage to enemy players with Dual Blades in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="doublekatana" accumulate="true" objective="damage" objective_count="3000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="265" sortnum="265" activate="1" name="PVP Damage Mission" description="Deal 5,000 damage to enemy players with Pistols in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="pistol" accumulate="true" objective="damage" objective_count="5000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="266" sortnum="266" activate="1" name="PVP Damage Mission" description="Deal 5,000 damage to enemy players with Revolvers in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="revolver" accumulate="true" objective="damage" objective_count="5000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="267" sortnum="267" activate="1" name="PVP Damage Mission" description="Deal 5,000 damage to enemy players with SMGs in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="smg" accumulate="true" objective="damage" objective_count="5000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="268" sortnum="268" activate="1" name="PVP Damage Mission" description="Deal 5,000 damage to enemy players with Shotguns in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="shotgun" accumulate="true" objective="damage" objective_count="5000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="269" sortnum="269" activate="1" name="PVP Damage Mission" description="Deal 5,000 damage to enemy players with Rifles in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="rifle" accumulate="true" objective="damage" objective_count="5000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="270" sortnum="270" activate="1" name="PVP Damage Mission" description="Deal 5,000 damage to enemy players with Machine Guns in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="machinegun" accumulate="true" objective="damage" objective_count="5000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="271" sortnum="271" activate="1" name="PVP Damage Mission" description="Deal 2500 damage to enemy players with Launchers in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="rocket" accumulate="true" objective="damage" objective_count="2500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="272" sortnum="272" activate="1" name="PVP Damage Mission" description="Deal 2500 damage to enemy players with Grenade in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="frag" accumulate="true" objective="damage" objective_count="2500">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="273" sortnum="273" activate="1" name="PVP Damage Mission" description="Deal 3,000 damage to enemy players with Melee only in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="melee" accumulate="true" objective="damage" objective_count="3000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="274" sortnum="274" activate="1" name="PVP Kill Mission" description="Kill 25 players using Daggers in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="dagger" accumulate="true" objective="kill" objective_count="25">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="275" sortnum="275" activate="1" name="PVP Kill Mission" description="Kill 25 players using Katanas in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="katana" accumulate="true" objective="kill" objective_count="25">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="276" sortnum="276" activate="1" name="PVP Kill Mission" description="Kill 25 players using Dual Blades in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="doublekatana" accumulate="true" objective="kill" objective_count="25">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="277" sortnum="277" activate="1" name="PVP Kill Mission" description="Kill 100 players using Pistols in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="pistol" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="278" sortnum="278" activate="1" name="PVP Kill Mission" description="Kill 100 players using Revolvers in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="revolver" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="279" sortnum="279" activate="1" name="PVP Kill Mission" description="Kill 100 players using SMGs in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="smg" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="280" sortnum="280" activate="1" name="PVP Kill Mission" description="Kill 100 players using Shotguns in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="shotgun" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="281" sortnum="281" activate="1" name="PVP Kill Mission" description="Kill 100 players using Rifles in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="rifle" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="282" sortnum="282" activate="1" name="PVP Kill Mission" description="Kill 100 players using Machine Guns in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="machinegun" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="283" sortnum="283" activate="1" name="PVP Kill Mission" description="Kill 20 players using Launchers in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="rocket" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="284" sortnum="284" activate="1" name="PVP Kill Mission" description="Kill 20 players using Grenade in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="frag" accumulate="true" objective="kill" objective_count="20">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="285" sortnum="285" activate="1" name="PVP Kill Mission" description="Kill 25 players using Melee only in any PVP match." difficulty="normal" type="weekly" game_type="pvp" weapon_type="melee" accumulate="true" objective="kill" objective_count="25">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="286" sortnum="286" activate="1" name="(Hard) PVP Match Mission" description="Play 30 games in any PVP match." difficulty="hard" type="weekly" game_type="pvp" weapon_type="all" accumulate="true" objective="mode_play" objective_count="30">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="287" sortnum="287" activate="1" name="(Hard) PVP Damage Mission" description="Deal 18,000 damage to enemy players in any PVP match." difficulty="hard" type="weekly" game_type="pvp" weapon_type="all" accumulate="true" objective="damage" objective_count="18000">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+  <MISSION id="288" sortnum="288" activate="1" name="(Hard) PVP Kill Mission" description="Kill 100 players in any PVP match." difficulty="hard" type="weekly" game_type="pvp" weapon_type="all" accumulate="true" objective="kill" objective_count="100">
+    <BOUNTY bounty="100" />
+    <EXP exp="100" />
+    <EVENTCASH eventcash="100" />
+  </MISSION>
+</XML>
